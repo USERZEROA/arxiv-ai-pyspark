@@ -1,0 +1,33 @@
+{
+  "run_started_utc": "2026-11-12T01:48:15+00:00",
+  "os": "Windows-11-10.0.26300-SP0",
+  "python": "3.12.14",
+  "java": "21.0.12.1",
+  "spark": "4.3.0",
+  "mode": "single-machine local mode (driver and executor threads in one JVM); not a multi-node cluster",
+  "default_parallelism": 24,
+  "cpu_count": 24,
+  "ram_gb": 63.4,
+  "application_id": "local-1794448093838",
+  "ui_web_url": "http://AI:4040",
+  "conf": {
+    "spark.master": "local[*]",
+    "spark.driver.memory": "16g",
+    "spark.sql.shuffle.partitions": "48",
+    "spark.sql.adaptive.enabled": "true",
+    "spark.sql.session.timeZone": "UTC",
+    "spark.eventLog.enabled": "true",
+    "spark.eventLog.dir": "file:///C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/spark-events",
+    "spark.hadoop.fs.file.impl": "local.shim.NoChmodLocalFileSystem"
+  },
+  "sql_conf": {
+    "spark.sql.adaptive.enabled": "true",
+    "spark.sql.adaptive.coalescePartitions.enabled": "true",
+    "spark.sql.autoBroadcastJoinThreshold": "10485760b",
+    "spark.sql.files.maxPartitionBytes": "134217728b",
+    "spark.sql.parquet.filterPushdown": "true",
+    "spark.sql.ansi.enabled": "true"
+  },
+  "shuffle_partitions_reason": "48 = 2 x 24 local cores. The default 200 would create many tiny tasks for the small shuffles here; AQE coalesces further.",
+  "run_mode": "full (all 11 shards)"
+}

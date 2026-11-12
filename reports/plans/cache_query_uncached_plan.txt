@@ -1,0 +1,48 @@
+== Physical Plan ==
+AdaptiveSparkPlan (7)
++- HashAggregate (6)
+   +- Exchange (5)
+      +- HashAggregate (4)
+         +- Project (3)
+            +- Filter (2)
+               +- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [3]: [id#0, versions#11, update_date#12]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/data/raw/arxiv-metadata-snapshot/data/train-00000-of-00011.parquet, ... 10 entries]
+PushedFilters: [IsNotNull(update_date), IsNotNull(id), GreaterThanOrEqual(update_date,2020-01-01T00:00)]
+ReadSchema: struct<id:string,versions:array<struct<version:string,created:string>>,update_date:timestamp_ntz>
+
+(2) Filter
+Input [3]: [id#0, versions#11, update_date#12]
+Condition : ((((((isnotnull(update_date#12) AND isnotnull(id#0)) AND NOT (trim(id#0, None) = )) AND (update_date#12 >= 2020-01-01 00:00:00)) AND isnotnull(gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_6#1994.version = v1), lambda x_6#1994, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false))) AND (gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_6#1994.version = v1), lambda x_6#1994, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false) >= 2020-01-01 00:00:00)) AND (gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_6#1994.version = v1), lambda x_6#1994, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false) < 2026-10-01 00:00:00))
+
+(3) Project
+Output [1]: [trunc(cast(gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_6#1994.version = v1), lambda x_6#1994, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false) as date), month) AS month_start#1999]
+Input [3]: [id#0, versions#11, update_date#12]
+
+(4) HashAggregate
+Input [1]: [month_start#1999]
+Keys [1]: [month_start#1999]
+Functions [1]: [partial_count(1)]
+Aggregate Attributes [1]: [count#2127L]
+Results [2]: [month_start#1999, count#2128L]
+
+(5) Exchange
+Input [2]: [month_start#1999, count#2128L]
+Arguments: hashpartitioning(month_start#1999, 48), ENSURE_REQUIREMENTS, [plan_id=4452]
+
+(6) HashAggregate
+Input [2]: [month_start#1999, count#2128L]
+Keys [1]: [month_start#1999]
+Functions [1]: [count(1)]
+Aggregate Attributes [1]: [count(1)#2126L]
+Results [2]: [month_start#1999, count(1)#2126L AS count#2111L]
+
+(7) AdaptiveSparkPlan
+Output [2]: [month_start#1999, count#2111L]
+Arguments: isFinalPlan=false
+
+

@@ -1,0 +1,68 @@
+== Physical Plan ==
+AdaptiveSparkPlan (10)
++- Sort (9)
+   +- Exchange (8)
+      +- HashAggregate (7)
+         +- Exchange (6)
+            +- HashAggregate (5)
+               +- HashAggregate (4)
+                  +- Exchange (3)
+                     +- HashAggregate (2)
+                        +- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [5]: [submitted_month#669, is_ai_category#672, mentions_genai_llm#674, ai_related#675, submitted_year#678]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/outputs/papers_clean]
+ReadSchema: struct<submitted_month:int,is_ai_category:boolean,mentions_genai_llm:boolean,ai_related:boolean>
+
+(2) HashAggregate
+Input [5]: [submitted_month#669, is_ai_category#672, mentions_genai_llm#674, ai_related#675, submitted_year#678]
+Keys [2]: [submitted_year#678, submitted_month#669]
+Functions [7]: [partial_count(1), partial_sum(cast(ai_related#675 as int)), partial_sum(cast(mentions_genai_llm#674 as int)), partial_sum(cast(is_ai_category#672 as int)), partial_sum(cast((submitted_month#669 <= 9) as int)), partial_sum(cast(((submitted_month#669 <= 9) AND ai_related#675) as int)), partial_sum(cast(((submitted_month#669 <= 9) AND mentions_genai_llm#674) as int))]
+Aggregate Attributes [7]: [count(1)#1072L, sum(cast(ai_related#675 as int))#1073L, sum(cast(mentions_genai_llm#674 as int))#1074L, sum(cast(is_ai_category#672 as int))#1075L, sum(cast((submitted_month#669 <= 9) as int))#1076L, sum(cast(((submitted_month#669 <= 9) AND ai_related#675) as int))#1077L, sum(cast(((submitted_month#669 <= 9) AND mentions_genai_llm#674) as int))#1078L]
+Results [9]: [submitted_year#678, submitted_month#669, count#1081L, sum#1083L, sum#1085L, sum#1087L, sum#1089L, sum#1091L, sum#1093L]
+
+(3) Exchange
+Input [9]: [submitted_year#678, submitted_month#669, count#1081L, sum#1083L, sum#1085L, sum#1087L, sum#1089L, sum#1091L, sum#1093L]
+Arguments: hashpartitioning(submitted_year#678, submitted_month#669, 48), ENSURE_REQUIREMENTS, [plan_id=2089]
+
+(4) HashAggregate
+Input [9]: [submitted_year#678, submitted_month#669, count#1081L, sum#1083L, sum#1085L, sum#1087L, sum#1089L, sum#1091L, sum#1093L]
+Keys [2]: [submitted_year#678, submitted_month#669]
+Functions [7]: [merge_count(1), merge_sum(cast(ai_related#675 as int)), merge_sum(cast(mentions_genai_llm#674 as int)), merge_sum(cast(is_ai_category#672 as int)), merge_sum(cast((submitted_month#669 <= 9) as int)), merge_sum(cast(((submitted_month#669 <= 9) AND ai_related#675) as int)), merge_sum(cast(((submitted_month#669 <= 9) AND mentions_genai_llm#674) as int))]
+Aggregate Attributes [7]: [count(1)#1072L, sum(cast(ai_related#675 as int))#1073L, sum(cast(mentions_genai_llm#674 as int))#1074L, sum(cast(is_ai_category#672 as int))#1075L, sum(cast((submitted_month#669 <= 9) as int))#1076L, sum(cast(((submitted_month#669 <= 9) AND ai_related#675) as int))#1077L, sum(cast(((submitted_month#669 <= 9) AND mentions_genai_llm#674) as int))#1078L]
+Results [9]: [submitted_year#678, submitted_month#669, count#1081L, sum#1083L, sum#1085L, sum#1087L, sum#1089L, sum#1091L, sum#1093L]
+
+(5) HashAggregate
+Input [9]: [submitted_year#678, submitted_month#669, count#1081L, sum#1083L, sum#1085L, sum#1087L, sum#1089L, sum#1091L, sum#1093L]
+Keys [1]: [submitted_year#678]
+Functions [8]: [merge_count(1), merge_sum(cast(ai_related#675 as int)), merge_sum(cast(mentions_genai_llm#674 as int)), merge_sum(cast(is_ai_category#672 as int)), merge_sum(cast((submitted_month#669 <= 9) as int)), merge_sum(cast(((submitted_month#669 <= 9) AND ai_related#675) as int)), merge_sum(cast(((submitted_month#669 <= 9) AND mentions_genai_llm#674) as int)), partial_count(distinct submitted_month#669)]
+Aggregate Attributes [8]: [count(1)#1072L, sum(cast(ai_related#675 as int))#1073L, sum(cast(mentions_genai_llm#674 as int))#1074L, sum(cast(is_ai_category#672 as int))#1075L, sum(cast((submitted_month#669 <= 9) as int))#1076L, sum(cast(((submitted_month#669 <= 9) AND ai_related#675) as int))#1077L, sum(cast(((submitted_month#669 <= 9) AND mentions_genai_llm#674) as int))#1078L, count(submitted_month#669)#1079L]
+Results [9]: [submitted_year#678, count#1081L, sum#1083L, sum#1085L, sum#1087L, sum#1089L, sum#1091L, sum#1093L, count#1096L]
+
+(6) Exchange
+Input [9]: [submitted_year#678, count#1081L, sum#1083L, sum#1085L, sum#1087L, sum#1089L, sum#1091L, sum#1093L, count#1096L]
+Arguments: hashpartitioning(submitted_year#678, 48), ENSURE_REQUIREMENTS, [plan_id=2093]
+
+(7) HashAggregate
+Input [9]: [submitted_year#678, count#1081L, sum#1083L, sum#1085L, sum#1087L, sum#1089L, sum#1091L, sum#1093L, count#1096L]
+Keys [1]: [submitted_year#678]
+Functions [8]: [count(1), sum(cast(ai_related#675 as int)), sum(cast(mentions_genai_llm#674 as int)), sum(cast(is_ai_category#672 as int)), sum(cast((submitted_month#669 <= 9) as int)), sum(cast(((submitted_month#669 <= 9) AND ai_related#675) as int)), sum(cast(((submitted_month#669 <= 9) AND mentions_genai_llm#674) as int)), count(distinct submitted_month#669)]
+Aggregate Attributes [8]: [count(1)#1072L, sum(cast(ai_related#675 as int))#1073L, sum(cast(mentions_genai_llm#674 as int))#1074L, sum(cast(is_ai_category#672 as int))#1075L, sum(cast((submitted_month#669 <= 9) as int))#1076L, sum(cast(((submitted_month#669 <= 9) AND ai_related#675) as int))#1077L, sum(cast(((submitted_month#669 <= 9) AND mentions_genai_llm#674) as int))#1078L, count(submitted_month#669)#1079L]
+Results [9]: [submitted_year#678, count(1)#1072L AS total_papers#1050L, sum(cast(ai_related#675 as int))#1073L AS ai_papers#1051L, sum(cast(mentions_genai_llm#674 as int))#1074L AS genai_llm_papers#1052L, sum(cast(is_ai_category#672 as int))#1075L AS ai_category_papers#1053L, sum(cast((submitted_month#669 <= 9) as int))#1076L AS ytd_total_papers#1054L, sum(cast(((submitted_month#669 <= 9) AND ai_related#675) as int))#1077L AS ytd_ai_papers#1055L, sum(cast(((submitted_month#669 <= 9) AND mentions_genai_llm#674) as int))#1078L AS ytd_genai_llm_papers#1056L, count(submitted_month#669)#1079L AS months_covered#1057L]
+
+(8) Exchange
+Input [9]: [submitted_year#678, total_papers#1050L, ai_papers#1051L, genai_llm_papers#1052L, ai_category_papers#1053L, ytd_total_papers#1054L, ytd_ai_papers#1055L, ytd_genai_llm_papers#1056L, months_covered#1057L]
+Arguments: rangepartitioning(submitted_year#678 ASC NULLS FIRST, 48), ENSURE_REQUIREMENTS, [plan_id=2096]
+
+(9) Sort
+Input [9]: [submitted_year#678, total_papers#1050L, ai_papers#1051L, genai_llm_papers#1052L, ai_category_papers#1053L, ytd_total_papers#1054L, ytd_ai_papers#1055L, ytd_genai_llm_papers#1056L, months_covered#1057L]
+Arguments: [submitted_year#678 ASC NULLS FIRST], true, 0
+
+(10) AdaptiveSparkPlan
+Output [9]: [submitted_year#678, total_papers#1050L, ai_papers#1051L, genai_llm_papers#1052L, ai_category_papers#1053L, ytd_total_papers#1054L, ytd_ai_papers#1055L, ytd_genai_llm_papers#1056L, months_covered#1057L]
+Arguments: isFinalPlan=false
+
+

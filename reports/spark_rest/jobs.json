@@ -1,0 +1,3857 @@
+[
+  {
+    "jobId": 138,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:930",
+    "description": "P4 Spot-check sample of AI rule matches",
+    "submissionTime": "2026-11-12T01:50:05.792GMT",
+    "completionTime": "2026-11-12T01:50:05.821GMT",
+    "stageIds": [
+      262,
+      263,
+      264
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-37"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 137,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:930",
+    "description": "P4 Spot-check sample of AI rule matches",
+    "submissionTime": "2026-11-12T01:50:05.724GMT",
+    "completionTime": "2026-11-12T01:50:05.780GMT",
+    "stageIds": [
+      260,
+      261
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-37"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 136,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:930",
+    "description": "P4 Spot-check sample of AI rule matches",
+    "submissionTime": "2026-11-12T01:50:05.681GMT",
+    "completionTime": "2026-11-12T01:50:05.723GMT",
+    "stageIds": [
+      258,
+      259
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-37"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 135,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:930",
+    "description": "P4 Spot-check sample of AI rule matches",
+    "submissionTime": "2026-11-12T01:49:49.667GMT",
+    "completionTime": "2026-11-12T01:50:05.653GMT",
+    "stageIds": [
+      257
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-37"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 134,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 3",
+    "submissionTime": "2026-11-12T01:49:49.364GMT",
+    "completionTime": "2026-11-12T01:49:49.370GMT",
+    "stageIds": [
+      256,
+      254,
+      255
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-36"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 133,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 3",
+    "submissionTime": "2026-11-12T01:49:49.306GMT",
+    "completionTime": "2026-11-12T01:49:49.353GMT",
+    "stageIds": [
+      252,
+      253
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-36"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 132,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 3",
+    "submissionTime": "2026-11-12T01:49:49.287GMT",
+    "completionTime": "2026-11-12T01:49:49.305GMT",
+    "stageIds": [
+      250,
+      251
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-36"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 131,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 3",
+    "submissionTime": "2026-11-12T01:49:49.146GMT",
+    "completionTime": "2026-11-12T01:49:49.273GMT",
+    "stageIds": [
+      249
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-36"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 130,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 2",
+    "submissionTime": "2026-11-12T01:49:49.092GMT",
+    "completionTime": "2026-11-12T01:49:49.099GMT",
+    "stageIds": [
+      246,
+      247,
+      248
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-35"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 129,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 2",
+    "submissionTime": "2026-11-12T01:49:49.034GMT",
+    "completionTime": "2026-11-12T01:49:49.081GMT",
+    "stageIds": [
+      244,
+      245
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-35"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 128,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 2",
+    "submissionTime": "2026-11-12T01:49:49.015GMT",
+    "completionTime": "2026-11-12T01:49:49.033GMT",
+    "stageIds": [
+      242,
+      243
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-35"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 127,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 2",
+    "submissionTime": "2026-11-12T01:49:48.857GMT",
+    "completionTime": "2026-11-12T01:49:49.002GMT",
+    "stageIds": [
+      241
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-35"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 126,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 1",
+    "submissionTime": "2026-11-12T01:49:48.795GMT",
+    "completionTime": "2026-11-12T01:49:48.802GMT",
+    "stageIds": [
+      240,
+      238,
+      239
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-34"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 125,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 1",
+    "submissionTime": "2026-11-12T01:49:48.731GMT",
+    "completionTime": "2026-11-12T01:49:48.785GMT",
+    "stageIds": [
+      236,
+      237
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-34"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 124,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 1",
+    "submissionTime": "2026-11-12T01:49:48.714GMT",
+    "completionTime": "2026-11-12T01:49:48.730GMT",
+    "stageIds": [
+      234,
+      235
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-34"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 123,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: cached run 1",
+    "submissionTime": "2026-11-12T01:49:48.448GMT",
+    "completionTime": "2026-11-12T01:49:48.698GMT",
+    "stageIds": [
+      233
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-34"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 122,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "Cache experiment: fill cache (count)",
+    "submissionTime": "2026-11-12T01:49:43.231GMT",
+    "completionTime": "2026-11-12T01:49:43.247GMT",
+    "stageIds": [
+      231,
+      232
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-33"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 121,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "Cache experiment: fill cache (count)",
+    "submissionTime": "2026-11-12T01:49:43.025GMT",
+    "completionTime": "2026-11-12T01:49:43.220GMT",
+    "stageIds": [
+      230
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-33"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 120,
+    "name": "count at DirectMethodHandleAccessor.java:103",
+    "description": "Cache experiment: fill cache (count)",
+    "submissionTime": "2026-11-12T01:49:29.653GMT",
+    "completionTime": "2026-11-12T01:49:43.010GMT",
+    "stageIds": [
+      229
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-33"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 119,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 3",
+    "submissionTime": "2026-11-12T01:49:29.473GMT",
+    "completionTime": "2026-11-12T01:49:29.480GMT",
+    "stageIds": [
+      226,
+      227,
+      228
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-32"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 118,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 3",
+    "submissionTime": "2026-11-12T01:49:29.414GMT",
+    "completionTime": "2026-11-12T01:49:29.463GMT",
+    "stageIds": [
+      224,
+      225
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-32"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 117,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 3",
+    "submissionTime": "2026-11-12T01:49:29.395GMT",
+    "completionTime": "2026-11-12T01:49:29.412GMT",
+    "stageIds": [
+      222,
+      223
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-32"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 116,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 3",
+    "submissionTime": "2026-11-12T01:49:18.272GMT",
+    "completionTime": "2026-11-12T01:49:29.376GMT",
+    "stageIds": [
+      221
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-32"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 115,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 2",
+    "submissionTime": "2026-11-12T01:49:18.186GMT",
+    "completionTime": "2026-11-12T01:49:18.194GMT",
+    "stageIds": [
+      218,
+      219,
+      220
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-31"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 114,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 2",
+    "submissionTime": "2026-11-12T01:49:18.129GMT",
+    "completionTime": "2026-11-12T01:49:18.176GMT",
+    "stageIds": [
+      216,
+      217
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-31"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 113,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 2",
+    "submissionTime": "2026-11-12T01:49:18.113GMT",
+    "completionTime": "2026-11-12T01:49:18.128GMT",
+    "stageIds": [
+      214,
+      215
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-31"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 112,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 2",
+    "submissionTime": "2026-11-12T01:49:07.504GMT",
+    "completionTime": "2026-11-12T01:49:18.097GMT",
+    "stageIds": [
+      213
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-31"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 111,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 1",
+    "submissionTime": "2026-11-12T01:49:07.433GMT",
+    "completionTime": "2026-11-12T01:49:07.441GMT",
+    "stageIds": [
+      210,
+      211,
+      212
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-30"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 110,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 1",
+    "submissionTime": "2026-11-12T01:49:07.374GMT",
+    "completionTime": "2026-11-12T01:49:07.423GMT",
+    "stageIds": [
+      208,
+      209
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-30"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 109,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 1",
+    "submissionTime": "2026-11-12T01:49:07.349GMT",
+    "completionTime": "2026-11-12T01:49:07.373GMT",
+    "stageIds": [
+      206,
+      207
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-30"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 108,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:524",
+    "description": "Cache experiment: uncached run 1",
+    "submissionTime": "2026-11-12T01:48:56.708GMT",
+    "completionTime": "2026-11-12T01:49:07.324GMT",
+    "stageIds": [
+      205
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-30"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 107,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:463",
+    "description": "Lazy evaluation demo",
+    "submissionTime": "2026-11-12T01:48:56.484GMT",
+    "completionTime": "2026-11-12T01:48:56.492GMT",
+    "stageIds": [
+      202,
+      203,
+      204
+    ],
+    "jobGroup": "lazy-demo",
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-29"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 7,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 6,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 106,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:463",
+    "description": "Lazy evaluation demo",
+    "submissionTime": "2026-11-12T01:48:56.463GMT",
+    "completionTime": "2026-11-12T01:48:56.476GMT",
+    "stageIds": [
+      200,
+      201
+    ],
+    "jobGroup": "lazy-demo",
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-29"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 6,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 5,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 105,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:463",
+    "description": "Lazy evaluation demo",
+    "submissionTime": "2026-11-12T01:48:56.449GMT",
+    "completionTime": "2026-11-12T01:48:56.462GMT",
+    "stageIds": [
+      198,
+      199
+    ],
+    "jobGroup": "lazy-demo",
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-29"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 6,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 5,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 104,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:463",
+    "description": "Lazy evaluation demo",
+    "submissionTime": "2026-11-12T01:48:56.157GMT",
+    "completionTime": "2026-11-12T01:48:56.430GMT",
+    "stageIds": [
+      197
+    ],
+    "jobGroup": "lazy-demo",
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-29"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 5,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 5,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 5,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 103,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "description": "P2 Actions vs transformations demo",
+    "submissionTime": "2026-11-12T01:48:56.068GMT",
+    "completionTime": "2026-11-12T01:48:56.082GMT",
+    "stageIds": [
+      196
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 102,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:597",
+    "description": "Partition pruning check: year_2025",
+    "submissionTime": "2026-11-12T01:48:56.014GMT",
+    "completionTime": "2026-11-12T01:48:56.022GMT",
+    "stageIds": [
+      193,
+      194,
+      195
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-28"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 7,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 6,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 101,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:597",
+    "description": "Partition pruning check: year_2025",
+    "submissionTime": "2026-11-12T01:48:55.983GMT",
+    "completionTime": "2026-11-12T01:48:56.004GMT",
+    "stageIds": [
+      192,
+      191
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-28"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 6,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 5,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 100,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:597",
+    "description": "Partition pruning check: year_2025",
+    "submissionTime": "2026-11-12T01:48:55.974GMT",
+    "completionTime": "2026-11-12T01:48:55.982GMT",
+    "stageIds": [
+      189,
+      190
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-28"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 6,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 5,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 99,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:597",
+    "description": "Partition pruning check: year_2025",
+    "submissionTime": "2026-11-12T01:48:55.927GMT",
+    "completionTime": "2026-11-12T01:48:55.961GMT",
+    "stageIds": [
+      188
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-28"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 5,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 5,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 5,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 98,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "submissionTime": "2026-11-12T01:48:55.851GMT",
+    "completionTime": "2026-11-12T01:48:55.870GMT",
+    "stageIds": [
+      187
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 97,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:597",
+    "description": "Partition pruning check: all_years",
+    "submissionTime": "2026-11-12T01:48:54.734GMT",
+    "completionTime": "2026-11-12T01:48:54.741GMT",
+    "stageIds": [
+      184,
+      185,
+      186
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-27"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 24,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 96,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:597",
+    "description": "Partition pruning check: all_years",
+    "submissionTime": "2026-11-12T01:48:54.704GMT",
+    "completionTime": "2026-11-12T01:48:54.723GMT",
+    "stageIds": [
+      182,
+      183
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-27"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 95,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:597",
+    "description": "Partition pruning check: all_years",
+    "submissionTime": "2026-11-12T01:48:54.688GMT",
+    "completionTime": "2026-11-12T01:48:54.704GMT",
+    "stageIds": [
+      180,
+      181
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-27"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 94,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:597",
+    "description": "Partition pruning check: all_years",
+    "submissionTime": "2026-11-12T01:48:54.539GMT",
+    "completionTime": "2026-11-12T01:48:54.670GMT",
+    "stageIds": [
+      179
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-27"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 93,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "description": "P1 Partition pruning check on year-partitioned output",
+    "submissionTime": "2026-11-12T01:48:54.484GMT",
+    "completionTime": "2026-11-12T01:48:54.497GMT",
+    "stageIds": [
+      178
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 92,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:54.447GMT",
+    "completionTime": "2026-11-12T01:48:54.453GMT",
+    "stageIds": [
+      176,
+      177
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-26"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 2,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 1,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 91,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:54.428GMT",
+    "completionTime": "2026-11-12T01:48:54.439GMT",
+    "stageIds": [
+      175
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-26"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 90,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:54.398GMT",
+    "completionTime": "2026-11-12T01:48:54.410GMT",
+    "stageIds": [
+      174
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 89,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:54.368GMT",
+    "completionTime": "2026-11-12T01:48:54.376GMT",
+    "stageIds": [
+      172,
+      173
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-25"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 2,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 1,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 88,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:54.341GMT",
+    "completionTime": "2026-11-12T01:48:54.357GMT",
+    "stageIds": [
+      171
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-25"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 87,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:54.306GMT",
+    "completionTime": "2026-11-12T01:48:54.318GMT",
+    "stageIds": [
+      170
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 86,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:876",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:54.270GMT",
+    "completionTime": "2026-11-12T01:48:54.282GMT",
+    "stageIds": [
+      168,
+      169
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-24"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 85,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:876",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:54.131GMT",
+    "completionTime": "2026-11-12T01:48:54.261GMT",
+    "stageIds": [
+      167
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-24"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 84,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:874",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:54.067GMT",
+    "completionTime": "2026-11-12T01:48:54.081GMT",
+    "stageIds": [
+      165,
+      166
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-23"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 8,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 7,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 83,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:874",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:53.952GMT",
+    "completionTime": "2026-11-12T01:48:54.053GMT",
+    "stageIds": [
+      164
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-23"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 7,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 7,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 7,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 82,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:872",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:53.881GMT",
+    "completionTime": "2026-11-12T01:48:53.891GMT",
+    "stageIds": [
+      162,
+      163
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-22"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 2,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 1,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 81,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:872",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:53.856GMT",
+    "completionTime": "2026-11-12T01:48:53.874GMT",
+    "stageIds": [
+      161
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-22"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 80,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:872",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:53.839GMT",
+    "completionTime": "2026-11-12T01:48:53.855GMT",
+    "stageIds": [
+      160
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-22"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 79,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:53.775GMT",
+    "completionTime": "2026-11-12T01:48:53.790GMT",
+    "stageIds": [
+      159
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 78,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:871",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:53.723GMT",
+    "completionTime": "2026-11-12T01:48:53.749GMT",
+    "stageIds": [
+      157,
+      158
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-21"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 2,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 1,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 77,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:871",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:53.663GMT",
+    "completionTime": "2026-11-12T01:48:53.711GMT",
+    "stageIds": [
+      156
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-21"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 76,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:871",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:53.642GMT",
+    "completionTime": "2026-11-12T01:48:53.662GMT",
+    "stageIds": [
+      155
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-21"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 75,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "description": "D1 Read back SQL outputs and verify",
+    "submissionTime": "2026-11-12T01:48:53.590GMT",
+    "completionTime": "2026-11-12T01:48:53.607GMT",
+    "stageIds": [
+      154
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 74,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "C2 SQL 2: 2025 vs 2026 cross-disciplinary comparison",
+    "submissionTime": "2026-11-12T01:48:53.507GMT",
+    "completionTime": "2026-11-12T01:48:53.554GMT",
+    "stageIds": [
+      150,
+      151,
+      152,
+      153
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-20"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 5,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 4,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 3,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 73,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "C2 SQL 2: 2025 vs 2026 cross-disciplinary comparison",
+    "submissionTime": "2026-11-12T01:48:53.470GMT",
+    "completionTime": "2026-11-12T01:48:53.492GMT",
+    "stageIds": [
+      147,
+      148,
+      149
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-20"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 4,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 3,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 72,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "C2 SQL 2: 2025 vs 2026 cross-disciplinary comparison",
+    "submissionTime": "2026-11-12T01:48:53.447GMT",
+    "completionTime": "2026-11-12T01:48:53.469GMT",
+    "stageIds": [
+      144,
+      145,
+      146
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-20"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 4,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 3,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 71,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "C2 SQL 2: 2025 vs 2026 cross-disciplinary comparison",
+    "submissionTime": "2026-11-12T01:48:53.385GMT",
+    "completionTime": "2026-11-12T01:48:53.418GMT",
+    "stageIds": [
+      142,
+      143
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-20"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 3,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 2,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 70,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "C2 SQL 2: 2025 vs 2026 cross-disciplinary comparison",
+    "submissionTime": "2026-11-12T01:48:53.245GMT",
+    "completionTime": "2026-11-12T01:48:53.363GMT",
+    "stageIds": [
+      141
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-20"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 2,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 2,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 2,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 69,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "C1 SQL 1: monthly AI research trends",
+    "submissionTime": "2026-11-12T01:48:53.004GMT",
+    "completionTime": "2026-11-12T01:48:53.064GMT",
+    "stageIds": [
+      138,
+      139,
+      140
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-19"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 24,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 68,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "C1 SQL 1: monthly AI research trends",
+    "submissionTime": "2026-11-12T01:48:52.949GMT",
+    "completionTime": "2026-11-12T01:48:52.973GMT",
+    "stageIds": [
+      136,
+      137
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-19"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 67,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "C1 SQL 1: monthly AI research trends",
+    "submissionTime": "2026-11-12T01:48:52.672GMT",
+    "completionTime": "2026-11-12T01:48:52.930GMT",
+    "stageIds": [
+      135
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-19"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 66,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:52.376GMT",
+    "completionTime": "2026-11-12T01:48:52.418GMT",
+    "stageIds": [
+      131,
+      132,
+      133,
+      134
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-18"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 24,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 3,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 65,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:52.338GMT",
+    "completionTime": "2026-11-12T01:48:52.362GMT",
+    "stageIds": [
+      128,
+      129,
+      130
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-18"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 64,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:52.320GMT",
+    "completionTime": "2026-11-12T01:48:52.336GMT",
+    "stageIds": [
+      125,
+      126,
+      127
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-18"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 63,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:52.170GMT",
+    "completionTime": "2026-11-12T01:48:52.302GMT",
+    "stageIds": [
+      123,
+      124
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-18"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 16,
+    "numSkippedTasks": 7,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 16,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 62,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.772GMT",
+    "completionTime": "2026-11-12T01:48:52.153GMT",
+    "stageIds": [
+      122
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-18"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 7,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 7,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 7,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 61,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.677GMT",
+    "completionTime": "2026-11-12T01:48:51.725GMT",
+    "stageIds": [
+      118,
+      119,
+      120,
+      121
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-17"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 3,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 60,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.646GMT",
+    "completionTime": "2026-11-12T01:48:51.662GMT",
+    "stageIds": [
+      115,
+      116,
+      117
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-17"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 24,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 59,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.635GMT",
+    "completionTime": "2026-11-12T01:48:51.645GMT",
+    "stageIds": [
+      112,
+      113,
+      114
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-17"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 24,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 58,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.596GMT",
+    "completionTime": "2026-11-12T01:48:51.621GMT",
+    "stageIds": [
+      110,
+      111
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-17"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 57,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.506GMT",
+    "completionTime": "2026-11-12T01:48:51.582GMT",
+    "stageIds": [
+      109
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-17"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 56,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:828",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.450GMT",
+    "completionTime": "2026-11-12T01:48:51.471GMT",
+    "stageIds": [
+      106,
+      107,
+      108
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-16"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 24,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 55,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:828",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.410GMT",
+    "completionTime": "2026-11-12T01:48:51.436GMT",
+    "stageIds": [
+      104,
+      105
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-16"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 54,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:828",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.392GMT",
+    "completionTime": "2026-11-12T01:48:51.409GMT",
+    "stageIds": [
+      102,
+      103
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-16"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 53,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:828",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.197GMT",
+    "completionTime": "2026-11-12T01:48:51.369GMT",
+    "stageIds": [
+      101
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-16"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 52,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:827",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.100GMT",
+    "completionTime": "2026-11-12T01:48:51.114GMT",
+    "stageIds": [
+      97,
+      98,
+      99,
+      100
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-15"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 24,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 3,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 51,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:827",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.065GMT",
+    "completionTime": "2026-11-12T01:48:51.090GMT",
+    "stageIds": [
+      96,
+      94,
+      95
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-15"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 50,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:827",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:51.036GMT",
+    "completionTime": "2026-11-12T01:48:51.064GMT",
+    "stageIds": [
+      91,
+      92,
+      93
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-15"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 49,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:827",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:50.747GMT",
+    "completionTime": "2026-11-12T01:48:51.005GMT",
+    "stageIds": [
+      89,
+      90
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-15"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 16,
+    "numSkippedTasks": 7,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 16,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 48,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:827",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:50.292GMT",
+    "completionTime": "2026-11-12T01:48:50.727GMT",
+    "stageIds": [
+      88
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-15"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 7,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 7,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 7,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 47,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:825",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:50.116GMT",
+    "completionTime": "2026-11-12T01:48:50.133GMT",
+    "stageIds": [
+      84,
+      85,
+      86,
+      87
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-14"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 3,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 46,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:825",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:50.081GMT",
+    "completionTime": "2026-11-12T01:48:50.105GMT",
+    "stageIds": [
+      81,
+      82,
+      83
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-14"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 24,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 45,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:825",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:50.063GMT",
+    "completionTime": "2026-11-12T01:48:50.080GMT",
+    "stageIds": [
+      80,
+      78,
+      79
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-14"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 24,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 44,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:825",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:49.978GMT",
+    "completionTime": "2026-11-12T01:48:50.036GMT",
+    "stageIds": [
+      76,
+      77
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-14"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 43,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:825",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:49.703GMT",
+    "completionTime": "2026-11-12T01:48:49.952GMT",
+    "stageIds": [
+      75
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-14"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 42,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:822",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:49.567GMT",
+    "completionTime": "2026-11-12T01:48:49.585GMT",
+    "stageIds": [
+      72,
+      73,
+      74
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-13"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 32,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 31,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 41,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:822",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:49.323GMT",
+    "completionTime": "2026-11-12T01:48:49.553GMT",
+    "stageIds": [
+      70,
+      71
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-13"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 31,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 24,
+    "numSkippedTasks": 7,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 24,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 40,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:822",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:48.599GMT",
+    "completionTime": "2026-11-12T01:48:49.304GMT",
+    "stageIds": [
+      69
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-13"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 7,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 7,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 7,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 39,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+    "submissionTime": "2026-11-12T01:48:48.523GMT",
+    "completionTime": "2026-11-12T01:48:48.541GMT",
+    "stageIds": [
+      68
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 38,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:47.959GMT",
+    "completionTime": "2026-11-12T01:48:48.465GMT",
+    "stageIds": [
+      65,
+      66,
+      67
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-11"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 54,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 7,
+    "numSkippedTasks": 47,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 7,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 37,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:47.568GMT",
+    "completionTime": "2026-11-12T01:48:47.925GMT",
+    "stageIds": [
+      64,
+      63
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-11"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 47,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 24,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 24,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 36,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:46.675GMT",
+    "completionTime": "2026-11-12T01:48:47.549GMT",
+    "stageIds": [
+      62
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-11"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 35,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:46.623GMT",
+    "completionTime": "2026-11-12T01:48:46.633GMT",
+    "stageIds": [
+      61
+    ],
+    "jobTags": [
+      "broadcast exchange (runId a4a78546-a7e2-4a8c-ae74-13498d8a353e)",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-11"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 34,
+    "name": "",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:46.505GMT",
+    "completionTime": "2026-11-12T01:48:46.505GMT",
+    "stageIds": [],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-10"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 0,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 0,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 0,
+    "numActiveStages": 0,
+    "numCompletedStages": 0,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 33,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:805",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:46.455GMT",
+    "completionTime": "2026-11-12T01:48:46.492GMT",
+    "stageIds": [
+      59,
+      60
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-10"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 32,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:805",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:46.252GMT",
+    "completionTime": "2026-11-12T01:48:46.428GMT",
+    "stageIds": [
+      58
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-10"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 31,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:805",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:46.190GMT",
+    "completionTime": "2026-11-12T01:48:46.203GMT",
+    "stageIds": [
+      57
+    ],
+    "jobTags": [
+      "broadcast exchange (runId 58ac0675-bf51-4ce0-8a42-4955adf0966e)",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-10"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 30,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:802",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:46.063GMT",
+    "completionTime": "2026-11-12T01:48:46.085GMT",
+    "stageIds": [
+      55,
+      56
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-9"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 29,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:802",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:45.879GMT",
+    "completionTime": "2026-11-12T01:48:46.046GMT",
+    "stageIds": [
+      54
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-9"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 28,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:802",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:45.814GMT",
+    "completionTime": "2026-11-12T01:48:45.840GMT",
+    "stageIds": [
+      53
+    ],
+    "jobTags": [
+      "broadcast exchange (runId 829b2589-c9a9-4178-bd1c-3ede13bf1a72)",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-9"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 27,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:45.734GMT",
+    "completionTime": "2026-11-12T01:48:45.756GMT",
+    "stageIds": [
+      51,
+      52
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-8"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 24,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 26,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:45.624GMT",
+    "completionTime": "2026-11-12T01:48:45.724GMT",
+    "stageIds": [
+      50
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-8"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 25,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:795",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:45.515GMT",
+    "completionTime": "2026-11-12T01:48:45.532GMT",
+    "stageIds": [
+      48,
+      49,
+      47
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-7"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 3,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 2,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 24,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:795",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:45.473GMT",
+    "completionTime": "2026-11-12T01:48:45.498GMT",
+    "stageIds": [
+      45,
+      46
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-7"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 2,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 1,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 23,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:795",
+    "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+    "submissionTime": "2026-11-12T01:48:45.352GMT",
+    "completionTime": "2026-11-12T01:48:45.453GMT",
+    "stageIds": [
+      44
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-7"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 22,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:781",
+    "description": "B2 Read back cleaned papers and register view",
+    "submissionTime": "2026-11-12T01:48:45.238GMT",
+    "completionTime": "2026-11-12T01:48:45.262GMT",
+    "stageIds": [
+      41,
+      42,
+      43
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-6"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 48,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 47,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 21,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:781",
+    "description": "B2 Read back cleaned papers and register view",
+    "submissionTime": "2026-11-12T01:48:44.907GMT",
+    "completionTime": "2026-11-12T01:48:45.216GMT",
+    "stageIds": [
+      39,
+      40
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-6"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 47,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 24,
+    "numSkippedTasks": 23,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 24,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 20,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:781",
+    "description": "B2 Read back cleaned papers and register view",
+    "submissionTime": "2026-11-12T01:48:44.303GMT",
+    "completionTime": "2026-11-12T01:48:44.877GMT",
+    "stageIds": [
+      38
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-6"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 23,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 23,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 23,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 19,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "description": "B2 Read back cleaned papers and register view",
+    "submissionTime": "2026-11-12T01:48:44.161GMT",
+    "completionTime": "2026-11-12T01:48:44.179GMT",
+    "stageIds": [
+      37
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 18,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B1 Clean papers (filters + withColumn + AI flags) and write Parquet by year",
+    "submissionTime": "2026-11-12T01:48:42.871GMT",
+    "completionTime": "2026-11-12T01:48:44.084GMT",
+    "stageIds": [
+      35,
+      36
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-4"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 32,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 7,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 7,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 17,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "B1 Clean papers (filters + withColumn + AI flags) and write Parquet by year",
+    "submissionTime": "2026-11-12T01:48:29.953GMT",
+    "completionTime": "2026-11-12T01:48:42.796GMT",
+    "stageIds": [
+      34
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-4"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 16,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:744",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:29.508GMT",
+    "completionTime": "2026-11-12T01:48:29.543GMT",
+    "stageIds": [
+      32,
+      33,
+      30,
+      31
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-3"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 28,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 27,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 3,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 15,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:744",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:29.424GMT",
+    "completionTime": "2026-11-12T01:48:29.489GMT",
+    "stageIds": [
+      27,
+      28,
+      29
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-3"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 14,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:744",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:29.384GMT",
+    "completionTime": "2026-11-12T01:48:29.420GMT",
+    "stageIds": [
+      24,
+      25,
+      26
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-3"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 13,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:744",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:29.225GMT",
+    "completionTime": "2026-11-12T01:48:29.354GMT",
+    "stageIds": [
+      22,
+      23
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-3"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 12,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:744",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:27.889GMT",
+    "completionTime": "2026-11-12T01:48:29.212GMT",
+    "stageIds": [
+      21
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-3"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 11,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:744",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:27.533GMT",
+    "completionTime": "2026-11-12T01:48:27.825GMT",
+    "stageIds": [
+      19,
+      20
+    ],
+    "jobTags": [
+      "broadcast exchange (runId 3c4ea44a-dbbe-4856-8f9c-91ebd244bd2c)",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-3"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 49,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 24,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 24,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 10,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:744",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:26.709GMT",
+    "completionTime": "2026-11-12T01:48:27.493GMT",
+    "stageIds": [
+      18
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-3"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 9,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:743",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:26.136GMT",
+    "completionTime": "2026-11-12T01:48:26.296GMT",
+    "stageIds": [
+      16,
+      17,
+      15
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-2"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 27,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 26,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 8,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:743",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:26.005GMT",
+    "completionTime": "2026-11-12T01:48:26.103GMT",
+    "stageIds": [
+      13,
+      14
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-2"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 7,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:743",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:25.950GMT",
+    "completionTime": "2026-11-12T01:48:25.998GMT",
+    "stageIds": [
+      11,
+      12
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-2"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 6,
+    "name": "toPandas at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:743",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:24.906GMT",
+    "completionTime": "2026-11-12T01:48:25.869GMT",
+    "stageIds": [
+      10
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-2"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 5,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:407",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:24.392GMT",
+    "completionTime": "2026-11-12T01:48:24.436GMT",
+    "stageIds": [
+      7,
+      8,
+      9
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-1"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 58,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 57,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 2,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 4,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:407",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:23.570GMT",
+    "completionTime": "2026-11-12T01:48:24.348GMT",
+    "stageIds": [
+      5,
+      6
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-1"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 57,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 32,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 32,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 3,
+    "name": "collect at C:\\Users\\yuhai\\Desktop\\\u9879\u76ee\\arxiv-ai-pyspark\\pipeline.py:407",
+    "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+    "submissionTime": "2026-11-12T01:48:20.275GMT",
+    "completionTime": "2026-11-12T01:48:23.433GMT",
+    "stageIds": [
+      4
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-1"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 2,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "A1 Load raw Parquet + row count",
+    "submissionTime": "2026-11-12T01:48:18.779GMT",
+    "completionTime": "2026-11-12T01:48:18.940GMT",
+    "stageIds": [
+      2,
+      3
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-0"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 26,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 25,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 1,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 1,
+    "name": "$anonfun$withThreadLocalCaptured$1 at CompletableFuture.java:1768",
+    "description": "A1 Load raw Parquet + row count",
+    "submissionTime": "2026-11-12T01:48:17.837GMT",
+    "completionTime": "2026-11-12T01:48:18.680GMT",
+    "stageIds": [
+      1
+    ],
+    "jobTags": [
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99",
+      "spark-session-aeeeaf82-5315-4f3f-9af0-67823a5cef99-execution-root-id-0"
+    ],
+    "status": "SUCCEEDED",
+    "numTasks": 25,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 25,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 25,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  },
+  {
+    "jobId": 0,
+    "name": "parquet at DirectMethodHandleAccessor.java:103",
+    "description": "A1 Load raw Parquet + row count",
+    "submissionTime": "2026-11-12T01:48:16.505GMT",
+    "completionTime": "2026-11-12T01:48:16.922GMT",
+    "stageIds": [
+      0
+    ],
+    "jobTags": [],
+    "status": "SUCCEEDED",
+    "numTasks": 1,
+    "numActiveTasks": 0,
+    "numCompletedTasks": 1,
+    "numSkippedTasks": 0,
+    "numFailedTasks": 0,
+    "numKilledTasks": 0,
+    "numCompletedIndices": 1,
+    "numActiveStages": 0,
+    "numCompletedStages": 1,
+    "numSkippedStages": 0,
+    "numFailedStages": 0,
+    "killedTasksSummary": {}
+  }
+]

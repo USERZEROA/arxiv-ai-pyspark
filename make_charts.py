@@ -35,8 +35,9 @@ def _style(ax, title, subtitle):
     ax.tick_params(colors=TEXT_2, labelsize=9, length=0)
     ax.grid(axis="y", color=GRID, linewidth=0.8)
     ax.set_axisbelow(True)
-    ax.set_title(title, loc="left", fontsize=13, color=TEXT, fontweight="bold", pad=24)
-    ax.text(0, 1.02, subtitle, transform=ax.transAxes, fontsize=9, color=TEXT_2)
+    fig = ax.figure
+    fig.text(0.012, 0.965, title, fontsize=13, color=TEXT, fontweight="bold", va="top")
+    fig.text(0.012, 0.905, subtitle, fontsize=9, color=TEXT_2, va="top")
 
 
 def _new_fig(w=10, h=5):
@@ -59,18 +60,18 @@ def chart_monthly_share(monthly: pd.DataFrame, out: Path):
         ax.annotate(f"{last[col]:.1%}", (last["month_start"], last[col]), xytext=(8, 0),
                     textcoords="offset points", va="center", fontsize=9, color=TEXT)
     first = m.iloc[0]
-    ax.annotate(f"{first['ai_share']:.1%}", (first["month_start"], first["ai_share"]), xytext=(0, 10),
+    ax.annotate(f"{first['ai_share']:.1%}", (first["month_start"], first["ai_share"]), xytext=(6, 14),
                 textcoords="offset points", ha="left", fontsize=9, color=TEXT)
     ax.yaxis.set_major_formatter(PercentFormatter(1.0, decimals=0))
     ax.xaxis.set_major_locator(mdates.YearLocator())
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
     ax.set_ylim(0, max(m["ai_share"].max() * 1.15, 0.05))
-    ax.set_xlim(m["month_start"].min(), m["month_start"].max() + pd.Timedelta(days=75))
+    ax.set_xlim(m["month_start"].min().to_pydatetime(), (m["month_start"].max() + pd.Timedelta(days=75)).to_pydatetime())
     ax.legend(frameon=False, loc="upper left", fontsize=9, labelcolor=TEXT)
     _style(ax, "Share of new arXiv papers that are AI-related, by month",
            f"Denominator: all papers first submitted (v1) in the month. "
            f"{m['month_start'].min():%b %Y} – {m['month_start'].max():%b %Y}, rule-based flags.")
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0, 1, 0.86))
     fig.savefig(out, facecolor=SURFACE)
     plt.close(fig)
 
@@ -89,11 +90,11 @@ def chart_monthly_counts(monthly: pd.DataFrame, out: Path):
     for col, color in (("total_papers", BLUE), ("ai_papers", ORANGE)):
         ax.annotate(f"{last[col]:,.0f}", (last["month_start"], last[col]), xytext=(8, 0),
                     textcoords="offset points", va="center", fontsize=9, color=TEXT)
-    ax.set_xlim(m["month_start"].min(), m["month_start"].max() + pd.Timedelta(days=100))
+    ax.set_xlim(m["month_start"].min().to_pydatetime(), (m["month_start"].max() + pd.Timedelta(days=100)).to_pydatetime())
     ax.legend(frameon=False, loc="upper left", fontsize=9, labelcolor=TEXT)
     _style(ax, "New arXiv papers per month: all vs AI-related",
            "Counts of unique papers by v1 submission month (UTC).")
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0, 1, 0.86))
     fig.savefig(out, facecolor=SURFACE)
     plt.close(fig)
 
@@ -124,7 +125,7 @@ def chart_field_comparison(fields: pd.DataFrame, out: Path):
     _style(ax, "AI-related share of papers by arXiv subject group, same months of 2025 and 2026",
            f"Unique (paper, subject group) pairs; cross-listed papers count in each group. "
            f"Label: change in percentage points, 2026 denominator.")
-    fig.tight_layout()
+    fig.tight_layout(rect=(0, 0, 1, 0.86))
     fig.savefig(out, facecolor=SURFACE)
     plt.close(fig)
 
@@ -142,4 +143,5 @@ def make_charts(reports_dir):
 
 
 if __name__ == "__main__":
-    print(make_charts(sys.argv[1] if len(sys.argv) > 1 else Path(__file__).parent / "reports"))
+    out = make_charts(sys.argv[1] if len(sys.argv) > 1 else Path(__file__).parent / "reports")
+    print("charts written to", out.name)

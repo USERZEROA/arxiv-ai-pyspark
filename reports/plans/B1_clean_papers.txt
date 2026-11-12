@@ -1,0 +1,46 @@
+== Physical Plan ==
+* Project (8)
++- * Project (7)
+   +- * Project (6)
+      +- * Project (5)
+         +- * Project (4)
+            +- * Filter (3)
+               +- * ColumnarToRow (2)
+                  +- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [6]: [id#0, title#3, categories#8, abstract#10, versions#11, update_date#12]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/data/raw/arxiv-metadata-snapshot/data/train-00000-of-00011.parquet, ... 10 entries]
+PushedFilters: [IsNotNull(update_date), IsNotNull(id), GreaterThanOrEqual(update_date,2020-01-01T00:00)]
+ReadSchema: struct<id:string,title:string,categories:string,abstract:string,versions:array<struct<version:string,created:string>>,update_date:timestamp_ntz>
+
+(2) ColumnarToRow [codegen id : 1]
+Input [6]: [id#0, title#3, categories#8, abstract#10, versions#11, update_date#12]
+
+(3) Filter [codegen id : 1]
+Input [6]: [id#0, title#3, categories#8, abstract#10, versions#11, update_date#12]
+Condition : ((((((isnotnull(update_date#12) AND isnotnull(id#0)) AND NOT (trim(id#0, None) = )) AND (update_date#12 >= 2020-01-01 00:00:00)) AND isnotnull(gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_4#650.version = v1), lambda x_4#650, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false))) AND (gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_4#650.version = v1), lambda x_4#650, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false) >= 2020-01-01 00:00:00)) AND (gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_4#650.version = v1), lambda x_4#650, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false) < 2026-10-01 00:00:00))
+
+(4) Project [codegen id : 1]
+Output [6]: [id#0, title#3, abstract#10, categories#8, update_date#12, cast(gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_4#650.version = v1), lambda x_4#650, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false) as date) AS submitted_date#652]
+Input [6]: [id#0, title#3, categories#8, abstract#10, versions#11, update_date#12]
+
+(5) Project [codegen id : 1]
+Output [11]: [id#0, title#3, update_date#12, submitted_date#652, year(submitted_date#652) AS submitted_year#653, month(submitted_date#652) AS submitted_month#654, trunc(submitted_date#652, month) AS month_start#655, array_distinct(filter(split(trim(coalesce(categories#8, ), None), \s+, -1), lambdafunction(NOT (lambda x_5#657 = ), lambda x_5#657, false))) AS category_list#656, regexp_replace(concat_ws( , coalesce(title#3, ), coalesce(abstract#10, )), [\s\-‐-―_]+,  , 1) AS norm_text#658, ((length(trim(coalesce(title#3, ), None)) > 0) OR (length(trim(coalesce(abstract#10, ), None)) > 0)) AS text_available#659, (length(trim(coalesce(abstract#10, ), None)) > 0) AS abstract_available#660]
+Input [6]: [id#0, title#3, abstract#10, categories#8, update_date#12, submitted_date#652]
+
+(6) Project [codegen id : 1]
+Output [13]: [id#0, title#3, update_date#12, submitted_date#652, submitted_year#653, submitted_month#654, month_start#655, category_list#656, norm_text#658, text_available#659, abstract_available#660, arrays_overlap(category_list#656, [cs.AI,cs.LG,cs.CL,cs.CV,cs.RO,cs.MA,cs.NE,stat.ML]) AS is_ai_category#661, RLIKE(norm_text#658, (?:(?i)\b(?:generative (?:ai|artificial intelligence)|large language models?|vision language models?|chatgpt|gpt ?[2-5](?:\.5)?o?|generative pre ?trained transformers?)\b)|(?:\bLLMs?\b)) AS mentions_genai_llm#662]
+Input [11]: [id#0, title#3, update_date#12, submitted_date#652, submitted_year#653, submitted_month#654, month_start#655, category_list#656, norm_text#658, text_available#659, abstract_available#660]
+
+(7) Project [codegen id : 1]
+Output [13]: [id#0, title#3, update_date#12, submitted_date#652, submitted_year#653, submitted_month#654, month_start#655, category_list#656, text_available#659, abstract_available#660, is_ai_category#661, mentions_genai_llm#662, (RLIKE(norm_text#658, (?i)\b(?:artificial intelligence|machine learning|deep learning|neural networks?|reinforcement learning|(?:self |semi |un)?supervised learning|natural language processing|computer vision|generative adversarial networks?|language models?|transfer learning|federated learning|representation learning)\b) OR mentions_genai_llm#662) AS mentions_ai_terms#663]
+Input [13]: [id#0, title#3, update_date#12, submitted_date#652, submitted_year#653, submitted_month#654, month_start#655, category_list#656, norm_text#658, text_available#659, abstract_available#660, is_ai_category#661, mentions_genai_llm#662]
+
+(8) Project [codegen id : 1]
+Output [14]: [id#0, title#3, update_date#12, submitted_date#652, submitted_year#653, submitted_month#654, month_start#655, category_list#656, is_ai_category#661, mentions_ai_terms#663, mentions_genai_llm#662, (is_ai_category#661 OR mentions_ai_terms#663) AS ai_related#664, text_available#659, abstract_available#660]
+Input [13]: [id#0, title#3, update_date#12, submitted_date#652, submitted_year#653, submitted_month#654, month_start#655, category_list#656, text_available#659, abstract_available#660, is_ai_category#661, mentions_genai_llm#662, mentions_ai_terms#663]
+
+

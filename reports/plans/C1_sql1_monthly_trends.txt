@@ -1,0 +1,62 @@
+== Physical Plan ==
+AdaptiveSparkPlan (10)
++- Project (9)
+   +- Window (8)
+      +- Sort (7)
+         +- Exchange (6)
+            +- Project (5)
+               +- HashAggregate (4)
+                  +- Exchange (3)
+                     +- HashAggregate (2)
+                        +- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [7]: [submitted_month#669, month_start#670, is_ai_category#672, mentions_ai_terms#673, mentions_genai_llm#674, ai_related#675, submitted_year#678]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/outputs/papers_clean]
+ReadSchema: struct<submitted_month:int,month_start:date,is_ai_category:boolean,mentions_ai_terms:boolean,mentions_genai_llm:boolean,ai_related:boolean>
+
+(2) HashAggregate
+Input [7]: [submitted_month#669, month_start#670, is_ai_category#672, mentions_ai_terms#673, mentions_genai_llm#674, ai_related#675, submitted_year#678]
+Keys [3]: [month_start#670, submitted_year#678, submitted_month#669]
+Functions [5]: [partial_count(1), partial_sum(CASE WHEN ai_related#675 THEN 1 ELSE 0 END), partial_sum(CASE WHEN is_ai_category#672 THEN 1 ELSE 0 END), partial_sum(CASE WHEN (mentions_ai_terms#673 AND NOT is_ai_category#672) THEN 1 ELSE 0 END), partial_sum(CASE WHEN mentions_genai_llm#674 THEN 1 ELSE 0 END)]
+Aggregate Attributes [5]: [count#1416L, sum#1417L, sum#1418L, sum#1419L, sum#1420L]
+Results [8]: [month_start#670, submitted_year#678, submitted_month#669, count#1421L, sum#1422L, sum#1423L, sum#1424L, sum#1425L]
+
+(3) Exchange
+Input [8]: [month_start#670, submitted_year#678, submitted_month#669, count#1421L, sum#1422L, sum#1423L, sum#1424L, sum#1425L]
+Arguments: hashpartitioning(month_start#670, submitted_year#678, submitted_month#669, 48), ENSURE_REQUIREMENTS, [plan_id=2995]
+
+(4) HashAggregate
+Input [8]: [month_start#670, submitted_year#678, submitted_month#669, count#1421L, sum#1422L, sum#1423L, sum#1424L, sum#1425L]
+Keys [3]: [month_start#670, submitted_year#678, submitted_month#669]
+Functions [5]: [count(1), sum(CASE WHEN ai_related#675 THEN 1 ELSE 0 END), sum(CASE WHEN is_ai_category#672 THEN 1 ELSE 0 END), sum(CASE WHEN (mentions_ai_terms#673 AND NOT is_ai_category#672) THEN 1 ELSE 0 END), sum(CASE WHEN mentions_genai_llm#674 THEN 1 ELSE 0 END)]
+Aggregate Attributes [5]: [count(1)#1409L, sum(CASE WHEN ai_related#675 THEN 1 ELSE 0 END)#1410L, sum(CASE WHEN is_ai_category#672 THEN 1 ELSE 0 END)#1411L, sum(CASE WHEN (mentions_ai_terms#673 AND NOT is_ai_category#672) THEN 1 ELSE 0 END)#1412L, sum(CASE WHEN mentions_genai_llm#674 THEN 1 ELSE 0 END)#1413L]
+Results [8]: [month_start#670, submitted_year#678, submitted_month#669, count(1)#1409L AS total_papers#1404L, sum(CASE WHEN ai_related#675 THEN 1 ELSE 0 END)#1410L AS ai_papers#1405L, sum(CASE WHEN is_ai_category#672 THEN 1 ELSE 0 END)#1411L AS ai_category_papers#1406L, sum(CASE WHEN (mentions_ai_terms#673 AND NOT is_ai_category#672) THEN 1 ELSE 0 END)#1412L AS ai_text_only_papers#1407L, sum(CASE WHEN mentions_genai_llm#674 THEN 1 ELSE 0 END)#1413L AS genai_llm_papers#1408L]
+
+(5) Project
+Output [12]: [month_start#670, submitted_year#678, submitted_month#669, total_papers#1404L, ai_papers#1405L, (cast(ai_papers#1405L as double) / cast(total_papers#1404L as double)) AS ai_share#1399, ai_category_papers#1406L, ai_text_only_papers#1407L, genai_llm_papers#1408L, (cast(genai_llm_papers#1408L as double) / cast(total_papers#1404L as double)) AS genai_llm_share#1400, (cast(genai_llm_papers#1408L as double) / if ((ai_papers#1405L = 0)) null else cast(ai_papers#1405L as double)) AS genai_llm_share_of_ai#1401, (cast(ai_papers#1405L as double) / cast(total_papers#1404L as double)) AS _w0#1414]
+Input [8]: [month_start#670, submitted_year#678, submitted_month#669, total_papers#1404L, ai_papers#1405L, ai_category_papers#1406L, ai_text_only_papers#1407L, genai_llm_papers#1408L]
+
+(6) Exchange
+Input [12]: [month_start#670, submitted_year#678, submitted_month#669, total_papers#1404L, ai_papers#1405L, ai_share#1399, ai_category_papers#1406L, ai_text_only_papers#1407L, genai_llm_papers#1408L, genai_llm_share#1400, genai_llm_share_of_ai#1401, _w0#1414]
+Arguments: SinglePartition, ENSURE_REQUIREMENTS, [plan_id=2999]
+
+(7) Sort
+Input [12]: [month_start#670, submitted_year#678, submitted_month#669, total_papers#1404L, ai_papers#1405L, ai_share#1399, ai_category_papers#1406L, ai_text_only_papers#1407L, genai_llm_papers#1408L, genai_llm_share#1400, genai_llm_share_of_ai#1401, _w0#1414]
+Arguments: [month_start#670 ASC NULLS FIRST], false, 0
+
+(8) Window
+Input [12]: [month_start#670, submitted_year#678, submitted_month#669, total_papers#1404L, ai_papers#1405L, ai_share#1399, ai_category_papers#1406L, ai_text_only_papers#1407L, genai_llm_papers#1408L, genai_llm_share#1400, genai_llm_share_of_ai#1401, _w0#1414]
+Arguments: [lag(_w0#1414, -12, null) windowspecdefinition(month_start#670 ASC NULLS FIRST, specifiedwindowframe(RowFrame, -12, -12)) AS ai_share_prev_year#1402, lag(_w0#1414, -12, null) windowspecdefinition(month_start#670 ASC NULLS FIRST, specifiedwindowframe(RowFrame, -12, -12)) AS _we1#1415], [month_start#670 ASC NULLS FIRST]
+
+(9) Project
+Output [13]: [month_start#670, submitted_year#678, submitted_month#669, total_papers#1404L, ai_papers#1405L, ai_share#1399, ai_category_papers#1406L, ai_text_only_papers#1407L, genai_llm_papers#1408L, genai_llm_share#1400, genai_llm_share_of_ai#1401, ai_share_prev_year#1402, (100.0 * ((cast(ai_papers#1405L as double) / cast(total_papers#1404L as double)) - _we1#1415)) AS ai_share_yoy_change_pp#1403]
+Input [14]: [month_start#670, submitted_year#678, submitted_month#669, total_papers#1404L, ai_papers#1405L, ai_share#1399, ai_category_papers#1406L, ai_text_only_papers#1407L, genai_llm_papers#1408L, genai_llm_share#1400, genai_llm_share_of_ai#1401, _w0#1414, ai_share_prev_year#1402, _we1#1415]
+
+(10) AdaptiveSparkPlan
+Output [13]: [month_start#670, submitted_year#678, submitted_month#669, total_papers#1404L, ai_papers#1405L, ai_share#1399, ai_category_papers#1406L, ai_text_only_papers#1407L, genai_llm_papers#1408L, genai_llm_share#1400, genai_llm_share_of_ai#1401, ai_share_prev_year#1402, ai_share_yoy_change_pp#1403]
+Arguments: isFinalPlan=false
+
+

@@ -1,0 +1,147 @@
+[
+  {
+    "check": "all 11 shards read",
+    "passed": true,
+    "detail": "11 files"
+  },
+  {
+    "check": "input size > 1 GB",
+    "passed": true,
+    "detail": "2,700,966,734 bytes"
+  },
+  {
+    "check": "Spark row count == source-declared rows",
+    "passed": true,
+    "detail": "3,224,635 vs 3,224,635"
+  },
+  {
+    "check": "no v1 parse failures",
+    "passed": true,
+    "detail": "0"
+  },
+  {
+    "check": "update_date pre-filter is lossless (no in-window paper with update_date < start)",
+    "passed": true,
+    "detail": "0"
+  },
+  {
+    "check": "snapshot covers the whole study window (max v1 date >= window end)",
+    "passed": true,
+    "detail": "max v1 = 2026-10-22 17:59:58 UTC"
+  },
+  {
+    "check": "cleaned rows == distinct in-window ids from QA",
+    "passed": true,
+    "detail": "1,554,267 vs 1,554,267"
+  },
+  {
+    "check": "ids unique in cleaned table",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "dates inside [start, end)",
+    "passed": true,
+    "detail": "2020-01-01 .. 2026-09-30"
+  },
+  {
+    "check": "taxonomy key category_id is unique",
+    "passed": true,
+    "detail": "155 rows / 155 ids"
+  },
+  {
+    "check": "LEFT join did not multiply rows",
+    "passed": true,
+    "detail": "2,872,031 exploded -> 2,872,031 joined"
+  },
+  {
+    "check": "paper_subjects unique on (id, subject_group)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "every cleaned paper has >= 1 subject row",
+    "passed": true,
+    "detail": "1,554,267 vs 1,554,267"
+  },
+  {
+    "check": "SQL1: months contiguous and complete for the window",
+    "passed": true,
+    "detail": "81 months"
+  },
+  {
+    "check": "SQL1: sum(total_papers) == cleaned papers",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "SQL1: sum(ai_papers) == cleaned AI papers",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "SQL1: genai <= ai <= total each month",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "SQL1: shares within [0, 1]",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "DataFrame groupBy totals == SQL1 totals per year",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "SQL2: 2025 group totals == unique (id, group) rows Jan-Sep 2025",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "SQL2: 2026 group totals == unique (id, group) rows Jan-Sep 2026",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "SQL2: group totals >= paper totals (multi-group papers counted per group)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "SQL2: ai <= total per group",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "SQL2: shares within [0, 1]",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "SQL2: pct change NULL when base is 0 (no infinity)",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "annual/multi-group outputs read back",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "lazy demo: no job while defining transformations",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "lazy demo: action triggered >= 1 job",
+    "passed": true,
+    "detail": ""
+  },
+  {
+    "check": "cache experiment: cached and uncached results identical",
+    "passed": true,
+    "detail": ""
+  }
+]

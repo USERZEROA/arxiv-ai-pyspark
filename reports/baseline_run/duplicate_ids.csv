@@ -1,0 +1,82 @@
+id,n_rows,n_distinct_versions,v1_date,category_variants,latest_update_date
+math-ph/0002004,2,2,2000-02-03,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0002029,2,2,2000-02-09,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0002045,2,2,2000-02-23,math-ph math.DG math.MP math.OA math.SG,2025-05-08
+math-ph/0007036,2,2,2000-07-27,math-ph hep-th math.MP nlin.SI,2025-01-30
+math-ph/0010004,2,2,2000-10-02,math-ph cs.NA math.FA math.MP math.NA | math-ph math.FA math.MP math.NA,2026-06-03
+math-ph/0010032,2,2,2000-10-23,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0010033,2,2,2000-10-23,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0010034,2,2,2000-10-23,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0010035,2,2,2000-10-23,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0010041,2,2,2000-10-24,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0011034,2,2,2000-11-20,math-ph math.AP math.MP math.NA | math-ph cs.NA math.AP math.MP math.NA,2026-06-03
+math-ph/0011048,2,2,2000-11-28,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0101015,2,2,2001-01-15,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0101027,2,2,2001-01-24,math-ph math.MP math.NA quant-ph | math-ph cs.NA math.MP math.NA quant-ph,2026-06-03
+math-ph/0101030,2,2,2001-01-27,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0101034,2,2,2001-01-30,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0104004,2,2,2001-04-02,math-ph hep-th math.MP math.NA math.QA | math-ph cs.NA hep-th math.MP math.NA math.QA,2026-06-03
+math-ph/0105008,2,2,2001-05-04,math-ph hep-th math.DG math.MP math.NA quant-ph | math-ph cs.NA hep-th math.DG math.MP math.NA quant-ph,2026-06-03
+math-ph/0106001,2,2,2001-06-01,math-ph math.MP math.NA math.SG | math-ph cs.NA math.MP math.NA math.SG,2026-06-03
+math-ph/0111014,2,2,2001-11-08,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0111015,2,2,2001-11-08,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0111016,2,2,2001-11-08,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0201039,2,2,2002-01-18,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0202048,2,2,2002-02-28,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0203043,3,2,2002-03-21,math-ph math.MP,2024-09-26
+math-ph/0206013,2,2,2002-06-10,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0208029,2,2,2002-08-21,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0209058,2,2,2002-09-27,math-ph cond-mat.stat-mech cs.NA math.MP math.NA math.PR | math-ph cond-mat.stat-mech math.MP math.NA math.PR,2026-06-03
+math-ph/0210063,2,2,2002-10-31,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0211028,2,2,2002-11-15,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0211052,2,2,2002-11-21,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0212007,2,2,2002-12-02,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0301028,2,2,2003-01-19,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0301045,2,2,2003-01-31,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0302045,2,2,2003-02-19,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0302055,2,2,2003-02-23,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0303066,3,2,2003-03-28,math-ph math.MP,2025-11-14
+math-ph/0306018,2,2,2003-06-05,math-ph hep-th math.MP math.NA | math-ph cs.NA hep-th math.MP math.NA,2026-06-03
+math-ph/0307025,2,2,2003-07-10,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0310041,2,2,2003-10-21,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0311023,2,2,2003-11-14,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0406061,2,2,2004-06-24,math-ph hep-th math.MP nlin.SI,2025-01-30
+math-ph/0407078,2,2,2004-07-30,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0501068,2,2,2005-01-27,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0505039,3,2,2005-05-13,math-ph hep-th math.DG math.MP nlin.SI,2026-08-13
+math-ph/0506038,2,2,2005-06-15,math-ph math.MP quant-ph | math-ph math.MP,2026-10-16
+math-ph/0506048,2,2,2005-06-18,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0507046,2,2,2005-07-19,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0509047,3,1,2005-09-21,math-ph hep-th math.MP math.SP,2024-11-05
+math-ph/0510041,2,2,2005-10-10,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0510046,2,2,2005-10-12,math-ph math.MP,2025-01-30
+math-ph/0511015,2,2,2005-11-04,math-ph math.MP,2025-01-30
+math-ph/0512019,4,2,2005-12-07,math-ph hep-th math.MP quant-ph,2024-04-19
+math-ph/0603001,2,2,2006-02-28,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0605055,4,2,2006-05-18,math-ph math.MP,2024-02-21
+math-ph/0605066,2,2,2006-05-24,math-ph math.CA math.MP,2024-10-22
+math-ph/0606001,3,2,2006-05-31,math-ph math.MP,2023-10-17
+math-ph/0606041,2,2,2006-06-17,math-ph cond-mat.str-el math.MP,2025-01-30
+math-ph/0608014,2,2,2006-08-04,math-ph cs.NA math.MP physics.data-an q-bio.PE q-bio.QM | math-ph cs.NA math.MP math.NA physics.data-an q-bio.PE q-bio.QM,2026-06-03
+math-ph/0609050,2,2,2006-09-18,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0610086,2,2,2006-10-30,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0611019,2,2,2006-11-08,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0611031,2,2,2006-11-14,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0611044,3,2,2006-11-18,math-ph math.DG math.MP,2024-10-18
+math-ph/0702049,3,2,2007-02-14,math-ph math.MP math.RT,2024-08-21
+math-ph/0702062,2,2,2007-02-17,math-ph cs.NA math.CV math.GM math.MP math.NA | math-ph math.CV math.GM math.MP math.NA,2026-06-03
+math-ph/0702063,2,2,2007-02-17,math-ph math.FA math.MP math.NA physics.comp-ph physics.geo-ph | math-ph cs.NA math.FA math.MP math.NA physics.comp-ph physics.geo-ph,2026-06-03
+math-ph/0702083,2,2,2007-02-23,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/0703090,2,2,2007-03-30,math-ph math.MP,2025-01-30
+math-ph/9805021,2,2,1998-05-25,math-ph math.DS math.MP math.NA | math-ph cs.NA math.DS math.MP math.NA,2026-06-03
+math-ph/9808008,2,2,1998-08-20,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/9811012,3,2,1998-11-13,math-ph math.MP math.RT,2026-09-07
+math-ph/9902018,2,2,1999-02-15,math-ph cs.NA math.MP math.NA math.NT | math-ph math.MP math.NA math.NT,2026-06-03
+math-ph/9911019,2,2,1999-11-13,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03
+math-ph/9911032,2,2,1999-11-25,math-ph math.AP math.MP math.NA | math-ph cs.NA math.AP math.MP math.NA,2026-06-03
+math-ph/9911034,2,2,1999-11-25,math-ph math.CA math.MP math.NA | math-ph cs.NA math.CA math.MP math.NA,2026-06-03
+math-ph/9911037,2,2,1999-11-26,math-ph math.AP math.MP math.NA | math-ph cs.NA math.AP math.MP math.NA,2026-06-03
+math-ph/9911038,2,2,1999-11-26,math-ph math.AP math.MP math.NA | math-ph cs.NA math.AP math.MP math.NA,2026-06-03
+math-ph/9911039,2,2,1999-11-26,math-ph math.AP math.MP math.NA | math-ph cs.NA math.AP math.MP math.NA,2026-06-03
+math-ph/9911041,2,2,1999-11-27,math-ph math.AP math.MP math.NA | math-ph cs.NA math.AP math.MP math.NA,2026-06-03
+math-ph/9911045,2,2,1999-11-28,math-ph math.MP math.NA | math-ph cs.NA math.MP math.NA,2026-06-03

@@ -1,0 +1,53 @@
+== Physical Plan ==
+AdaptiveSparkPlan (8)
++- Sort (7)
+   +- Exchange (6)
+      +- HashAggregate (5)
+         +- Exchange (4)
+            +- HashAggregate (3)
+               +- Project (2)
+                  +- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [3]: [submitted_month#1899, ai_related#1905, submitted_year#1908]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/outputs/papers_clean]
+PartitionFilters: [isnotnull(submitted_year#1908), (submitted_year#1908 = 2025)]
+ReadSchema: struct<submitted_month:int,ai_related:boolean>
+
+(2) Project
+Output [2]: [submitted_month#1899, ai_related#1905]
+Input [3]: [submitted_month#1899, ai_related#1905, submitted_year#1908]
+
+(3) HashAggregate
+Input [2]: [submitted_month#1899, ai_related#1905]
+Keys [1]: [submitted_month#1899]
+Functions [2]: [partial_count(1), partial_avg(cast(ai_related#1905 as int))]
+Aggregate Attributes [3]: [count#1928L, sum#1929, count#1930L]
+Results [4]: [submitted_month#1899, count#1931L, sum#1932, count#1933L]
+
+(4) Exchange
+Input [4]: [submitted_month#1899, count#1931L, sum#1932, count#1933L]
+Arguments: hashpartitioning(submitted_month#1899, 48), ENSURE_REQUIREMENTS, [plan_id=3872]
+
+(5) HashAggregate
+Input [4]: [submitted_month#1899, count#1931L, sum#1932, count#1933L]
+Keys [1]: [submitted_month#1899]
+Functions [2]: [count(1), avg(cast(ai_related#1905 as int))]
+Aggregate Attributes [2]: [count(1)#1926L, avg(cast(ai_related#1905 as int))#1927]
+Results [3]: [submitted_month#1899, count(1)#1926L AS papers#1910L, avg(cast(ai_related#1905 as int))#1927 AS ai_share#1911]
+
+(6) Exchange
+Input [3]: [submitted_month#1899, papers#1910L, ai_share#1911]
+Arguments: rangepartitioning(submitted_month#1899 ASC NULLS FIRST, 48), ENSURE_REQUIREMENTS, [plan_id=3875]
+
+(7) Sort
+Input [3]: [submitted_month#1899, papers#1910L, ai_share#1911]
+Arguments: [submitted_month#1899 ASC NULLS FIRST], true, 0
+
+(8) AdaptiveSparkPlan
+Output [3]: [submitted_month#1899, papers#1910L, ai_share#1911]
+Arguments: isFinalPlan=false
+
+

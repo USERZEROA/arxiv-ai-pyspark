@@ -1,0 +1,2861 @@
+{
+  "partition_pruning": {
+    "all_years": {
+      "seconds": 0.225,
+      "result_rows": 12,
+      "scan_metrics": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n146 ms (5 ms, 6 ms, 8 ms (stage 179.0: task 657))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "162",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n11.2 KiB (5.6 KiB, 5.6 KiB, 5.6 KiB (stage 181.0: task 670))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "14",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n3.2 KiB (360.0 B, 480.0 B, 480.0 B (stage 179.0: task 654))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n122 ms (16 ms, 17 ms, 18 ms (stage 179.0: task 662))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 181.0: task 670))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n5.6 KiB (678.0 B, 838.0 B, 853.0 B (stage 179.0: task 650))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "12",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "12",
+            "local bytes read": "827.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "384.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "6 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "12",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "827.0 B"
+          }
+        }
+      ],
+      "sql_execution_id": 27
+    },
+    "year_2025": {
+      "seconds": 0.116,
+      "result_rows": 12,
+      "scan_metrics": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "1",
+            "scan time": "total (min, med, max (stageId: taskId))\n19 ms (3 ms, 4 ms, 5 ms (stage 188.0: task 676))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "17.4 MiB",
+            "number of output rows": "284,162",
+            "number of partitions read": "1"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "12",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "24",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n1688.0 B (844.0 B, 844.0 B, 844.0 B (stage 192.0: task 680))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "2",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "480.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "10 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 192.0: task 680))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "844.0 B"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "12",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "12",
+            "local bytes read": "816.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "384.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "8 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "12",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "816.0 B"
+          }
+        }
+      ],
+      "sql_execution_id": 28
+    }
+  },
+  "lazy_demo": {
+    "jobs_before": 0,
+    "jobs_after_transformations": 0,
+    "jobs_after_action": 4,
+    "define_seconds": 0.0165,
+    "action_seconds": 0.383,
+    "action_result": [
+      {
+        "mentions_genai_llm": false,
+        "papers": 89484,
+        "avg_title_words": 10.2
+      },
+      {
+        "mentions_genai_llm": true,
+        "papers": 40474,
+        "avg_title_words": 10.45
+      }
+    ]
+  },
+  "cache_experiment": {
+    "cached_dataframe": "papers = clean_papers(raw): Parquet scan + 4 filters + withColumn + regex AI flags",
+    "query": "groupBy(month_start).agg(count, sum(ai_related), sum(mentions_genai_llm)).collect()",
+    "repeats": 3,
+    "uncached_seconds": [
+      10.813,
+      10.77,
+      11.269
+    ],
+    "uncached_median": 10.813,
+    "cache_fill_seconds": 13.685,
+    "cached_rows": 1554267,
+    "cached_seconds": [
+      0.407,
+      0.284,
+      0.29
+    ],
+    "cached_median": 0.29,
+    "speedup_median": 37.29,
+    "results_identical": true,
+    "storage_after_fill": [
+      {
+        "rdd_id": 399,
+        "name": "*(1) Project [id#0, title#3, update_date#12, submitted_date#1996, submitted_year...",
+        "storageLevel": "Disk Memory Deserialized 1x Replicated",
+        "numPartitions": 25,
+        "numCachedPartitions": 25,
+        "memoryUsed": 239307560,
+        "diskUsed": 0
+      }
+    ],
+    "unpersisted": true
+  },
+  "timings": {
+    "A1_load": {
+      "description": "A1 Load raw Parquet + row count",
+      "seconds": 3.058
+    },
+    "A2_quality": {
+      "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+      "seconds": 10.452
+    },
+    "B1_clean_write": {
+      "description": "B1 Clean papers (filters + withColumn + AI flags) and write Parquet by year",
+      "seconds": 14.556
+    },
+    "B2_read_back": {
+      "description": "B2 Read back cleaned papers and register view",
+      "seconds": 1.157
+    },
+    "B3_join": {
+      "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+      "seconds": 3.217
+    },
+    "B4_groupby": {
+      "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+      "seconds": 3.939
+    },
+    "C1_sql_monthly": {
+      "description": "C1 SQL 1: monthly AI research trends",
+      "seconds": 0.64
+    },
+    "C2_sql_fields": {
+      "description": "C2 SQL 2: 2025 vs 2026 cross-disciplinary comparison",
+      "seconds": 0.489
+    },
+    "D1_read_back_verify": {
+      "description": "D1 Read back SQL outputs and verify",
+      "seconds": 0.891
+    },
+    "P1_partition_pruning": {
+      "description": "P1 Partition pruning check on year-partitioned output",
+      "seconds": 1.577
+    },
+    "P2_lazy_demo": {
+      "description": "P2 Actions vs transformations demo",
+      "seconds": 0.458
+    },
+    "P3_cache": {
+      "description": "P3 Cache experiment (optional bonus)",
+      "seconds": 52.903
+    },
+    "P4_spot_check": {
+      "description": "P4 Spot-check sample of AI rule matches",
+      "seconds": 16.423
+    }
+  },
+  "input_files": 11,
+  "input_bytes_on_disk": 2700966734,
+  "papers_clean_files_per_year": {
+    "submitted_year=2020": 1,
+    "submitted_year=2021": 1,
+    "submitted_year=2022": 1,
+    "submitted_year=2023": 1,
+    "submitted_year=2024": 1,
+    "submitted_year=2025": 1,
+    "submitted_year=2026": 1
+  },
+  "sql_executions": [
+    {
+      "id": 0,
+      "description": "A1 Load raw Parquet + row count",
+      "status": "COMPLETED",
+      "duration_ms": 1801,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n8.9 s (34 ms, 368 ms, 373 ms (stage 1.0: task 24))",
+            "metadata time": "12 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "25",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "25",
+            "local bytes read": "1475.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "25",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n400.0 B (16.0 B, 16.0 B, 16.0 B (stage 1.0: task 18))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n75 ms (1 ms, 2 ms, 16 ms (stage 1.0: task 5))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n1475.0 B (59.0 B, 59.0 B, 59.0 B (stage 1.0: task 18))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+      "status": "COMPLETED",
+      "duration_ms": 4791,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n27.3 s (271 ms, 1.1 s, 1.4 s (stage 4.0: task 42))",
+            "metadata time": "1 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "4,778,939",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "4,778,939",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n45.6 MiB (970.2 KiB, 1937.1 KiB, 1948.2 KiB (stage 6.0: task 63))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "800",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n802.1 MiB (17.3 MiB, 31.9 MiB, 42.4 MiB (stage 4.0: task 29))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n2.0 s (39 ms, 67 ms, 196 ms (stage 4.0: task 49))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n1 ms (0 ms, 0 ms, 1 ms (stage 6.0: task 66))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n45.6 MiB (829.6 KiB, 1942.5 KiB, 2.4 MiB (stage 4.0: task 35))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "32",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "32",
+            "local bytes read": "2.5 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "32",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n8.8 KiB (280.0 B, 280.0 B, 280.0 B (stage 6.0: task 53))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n58 ms (0 ms, 1 ms, 7 ms (stage 6.0: task 53))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n2.5 KiB (77.0 B, 78.0 B, 164.0 B (stage 6.0: task 63))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+      "status": "COMPLETED",
+      "duration_ms": 1637,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n874 ms (18 ms, 27 ms, 109 ms (stage 10.0: task 100))",
+            "metadata time": "1 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "973",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,946",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n85.8 KiB (42.9 KiB, 42.9 KiB, 42.9 KiB (stage 14.0: task 111))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "32",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n30.4 KiB (288.0 B, 2.1 KiB, 2.9 KiB (stage 10.0: task 85))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n510 ms (18 ms, 31 ms, 48 ms (stage 10.0: task 86))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 14.0: task 111))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n42.9 KiB (543.0 B, 3.0 KiB, 3.9 KiB (stage 10.0: task 85))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "94",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "94",
+            "local bytes read": "4.3 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "48",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "2.9 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "36 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "4.3 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "description": "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)",
+      "status": "COMPLETED",
+      "duration_ms": 2975,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n5.4 s (18 ms, 223 ms, 230 ms (stage 18.0: task 130))",
+            "metadata time": "0 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "3,224,622",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "3,224,622",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n27.3 MiB (1161.1 KiB, 1166.0 KiB, 1170.2 KiB (stage 20.0: task 151))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "600",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n123.0 MiB (3.0 MiB, 4.8 MiB, 7.3 MiB (stage 18.0: task 131))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n4.3 s (92 ms, 185 ms, 206 ms (stage 18.0: task 120))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 20.0: task 138))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n27.3 MiB (652.6 KiB, 1059.9 KiB, 1840.3 KiB (stage 18.0: task 131))"
+          }
+        },
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n21.0 s (336 ms, 914 ms, 1.1 s (stage 21.0: task 162))",
+            "metadata time": "0 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "BroadcastHashJoin",
+          "metrics": {
+            "number of output rows": "174"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "161",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "161",
+            "local bytes read": "112.0 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "15",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n150.2 KiB (664.0 B, 4.0 KiB, 57.9 KiB (stage 21.0: task 184))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n238 ms (4 ms, 8 ms, 97 ms (stage 21.0: task 183))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n112.0 KiB (542.0 B, 3.3 KiB, 40.6 KiB (stage 21.0: task 184))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "162",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n17.0 KiB (8.5 KiB, 8.5 KiB, 8.5 KiB (stage 29.0: task 189))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "2",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "13.7 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "25 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 29.0: task 189))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "8.5 KiB"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "7.8 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "48",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "10.1 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "31 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "7.8 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "description": "B1 Clean papers (filters + withColumn + AI flags) and write Parquet by year",
+      "status": "COMPLETED",
+      "duration_ms": 14280,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n14.0 s (191 ms, 588 ms, 824 ms (stage 34.0: task 206))",
+            "metadata time": "0 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "1,554,267",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,554,267",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n170.9 MiB (19.6 MiB, 23.2 MiB, 31.2 MiB (stage 36.0: task 222))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "73",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n398.4 MiB (9.1 MiB, 30.1 MiB, 32.3 MiB (stage 34.0: task 193))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n764 ms (32 ms, 49 ms, 72 ms (stage 34.0: task 195))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 36.0: task 218))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n170.9 MiB (3.9 MiB, 12.9 MiB, 13.9 MiB (stage 34.0: task 195))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "description": "B2 Read back cleaned papers and register view",
+      "status": "COMPLETED",
+      "duration_ms": 17,
+      "scan_and_exchange_nodes": []
+    },
+    {
+      "id": 6,
+      "description": "B2 Read back cleaned papers and register view",
+      "status": "COMPLETED",
+      "duration_ms": 1012,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n754 ms (19 ms, 20 ms, 65 ms (stage 38.0: task 237))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "1 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "1,554,267",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,554,267",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n28.6 MiB (1211.5 KiB, 1218.8 KiB, 1229.7 KiB (stage 40.0: task 267))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "168",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n130.4 MiB (15.0 MiB, 17.6 MiB, 23.8 MiB (stage 38.0: task 231))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n381 ms (50 ms, 54 ms, 58 ms (stage 38.0: task 227))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 40.0: task 255))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n28.6 MiB (3.3 MiB, 3.8 MiB, 5.3 MiB (stage 38.0: task 231))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "24",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "24",
+            "local bytes read": "2.0 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "24",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n1728.0 B (72.0 B, 72.0 B, 72.0 B (stage 40.0: task 255))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n45 ms (0 ms, 1 ms, 3 ms (stage 40.0: task 256))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n2.0 KiB (87.0 B, 87.0 B, 87.0 B (stage 40.0: task 255))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+      "status": "COMPLETED",
+      "duration_ms": 239,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan csv",
+          "metrics": {
+            "number of output rows": "155",
+            "number of files read": "1",
+            "metadata time": "0 ms",
+            "size of files read": "13.0 KiB"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "155",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "155",
+            "local bytes read": "5.0 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "5.2 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "28 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "5.0 KiB"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "1",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1",
+            "local bytes read": "60.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "24.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "1 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "60.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+      "status": "COMPLETED",
+      "duration_ms": 162,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n192 ms (7 ms, 8 ms, 10 ms (stage 50.0: task 276))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "23",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "23",
+            "local bytes read": "1309.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "23",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n368.0 B (16.0 B, 16.0 B, 16.0 B (stage 50.0: task 283))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n59 ms (1 ms, 2 ms, 3 ms (stage 50.0: task 291))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n1309.0 B (56.0 B, 56.0 B, 59.0 B (stage 50.0: task 276))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+      "status": "COMPLETED",
+      "duration_ms": 313,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan csv",
+          "metrics": {
+            "number of output rows": "155",
+            "number of files read": "1",
+            "metadata time": "0 ms",
+            "size of files read": "13.0 KiB"
+          }
+        },
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n188 ms (6 ms, 8 ms, 11 ms (stage 54.0: task 315))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "BroadcastHashJoin",
+          "metrics": {
+            "number of output rows": "2,872,031"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "23",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "23",
+            "local bytes read": "1353.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "23",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n552.0 B (24.0 B, 24.0 B, 24.0 B (stage 54.0: task 320))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n55 ms (1 ms, 2 ms, 3 ms (stage 54.0: task 319))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n1353.0 B (57.0 B, 57.0 B, 63.0 B (stage 54.0: task 315))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+      "status": "COMPLETED",
+      "duration_ms": 358,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan csv",
+          "metrics": {
+            "number of output rows": "155",
+            "number of files read": "1",
+            "metadata time": "0 ms",
+            "size of files read": "13.0 KiB"
+          }
+        },
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n193 ms (6 ms, 8 ms, 12 ms (stage 58.0: task 332))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "BroadcastHashJoin",
+          "metrics": {
+            "number of output rows": "2,872,031"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "0",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "0",
+            "local bytes read": "0.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "0",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "0.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "0 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "0.0 B"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "0",
+            "data size": "0.0 B",
+            "shuffle write time": "0 ms",
+            "number of partitions": "48",
+            "shuffle bytes written": "0.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "description": "B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)",
+      "status": "COMPLETED",
+      "duration_ms": 1898,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan csv",
+          "metrics": {
+            "number of output rows": "155",
+            "number of files read": "1",
+            "metadata time": "0 ms",
+            "size of files read": "13.0 KiB"
+          }
+        },
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n356 ms (7 ms, 9 ms, 32 ms (stage 62.0: task 353))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "BroadcastHashJoin",
+          "metrics": {
+            "number of output rows": "2,872,031"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "1,826,011",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,826,011",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n37.9 MiB (1604.7 KiB, 1616.3 KiB, 1632.8 KiB (stage 64.0: task 388))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "168",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n236.5 MiB (27.8 MiB, 32.0 MiB, 42.5 MiB (stage 62.0: task 357))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n379 ms (50 ms, 55 ms, 56 ms (stage 62.0: task 355))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 64.0: task 373))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n37.9 MiB (4.5 MiB, 5.2 MiB, 6.9 MiB (stage 62.0: task 357))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "1,826,011",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,826,011",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n30.1 MiB (3.6 MiB, 4.1 MiB, 5.5 MiB (stage 67.0: task 403))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "168",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n166.8 MiB (6.9 MiB, 6.9 MiB, 7.0 MiB (stage 64.0: task 381))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n415 ms (11 ms, 17 ms, 21 ms (stage 64.0: task 390))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 67.0: task 401))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n30.1 MiB (1274.0 KiB, 1281.8 KiB, 1292.0 KiB (stage 64.0: task 388))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+      "status": "COMPLETED",
+      "duration_ms": 3,
+      "scan_and_exchange_nodes": []
+    },
+    {
+      "id": 13,
+      "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+      "status": "COMPLETED",
+      "duration_ms": 1022,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n53 ms (7 ms, 8 ms, 8 ms (stage 69.0: task 410))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "12.7 MiB",
+            "number of output rows": "1,826,011",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "3,380,285",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "3,380,285",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n42.5 MiB (1797.9 KiB, 1814.6 KiB, 1827.8 KiB (stage 71.0: task 431))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "168",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n208.1 MiB (24.4 MiB, 28.1 MiB, 37.7 MiB (stage 69.0: task 405))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n352 ms (48 ms, 49 ms, 52 ms (stage 69.0: task 410))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 71.0: task 420))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n42.5 MiB (5.0 MiB, 5.8 MiB, 7.7 MiB (stage 69.0: task 405))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "24",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "24",
+            "local bytes read": "1596.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "24",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n960.0 B (40.0 B, 40.0 B, 40.0 B (stage 71.0: task 420))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n45 ms (0 ms, 1 ms, 3 ms (stage 71.0: task 412))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n1596.0 B (66.0 B, 66.0 B, 78.0 B (stage 71.0: task 419))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+      "status": "COMPLETED",
+      "duration_ms": 460,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n165 ms (6 ms, 7 ms, 9 ms (stage 75.0: task 447))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "6.8 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "7",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n6.3 KiB (720.0 B, 960.0 B, 960.0 B (stage 75.0: task 444))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n92 ms (10 ms, 13 ms, 14 ms (stage 75.0: task 440))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n6.8 KiB (759.0 B, 1024.0 B, 1078.0 B (stage 75.0: task 444))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "7",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "14",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n1414.0 B (707.0 B, 707.0 B, 707.0 B (stage 80.0: task 461))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "2",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "560.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "6 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 80.0: task 461))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "707.0 B"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "7",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "7",
+            "local bytes read": "707.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "7",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "560.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "4 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "7",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "707.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+      "status": "COMPLETED",
+      "duration_ms": 871,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n136 ms (19 ms, 19 ms, 20 ms (stage 88.0: task 465))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "12.7 MiB",
+            "number of output rows": "1,826,011",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "1,554,267",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,554,267",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n21.9 MiB (1393.8 KiB, 1400.8 KiB, 1408.0 KiB (stage 90.0: task 481))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "112",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n94.9 MiB (10.9 MiB, 12.8 MiB, 17.3 MiB (stage 88.0: task 464))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n405 ms (49 ms, 58 ms, 63 ms (stage 88.0: task 469))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 90.0: task 486))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n21.9 MiB (2.5 MiB, 3.0 MiB, 4.0 MiB (stage 88.0: task 464))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "112",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "224",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n19.2 KiB (9.6 KiB, 9.6 KiB, 9.6 KiB (stage 93.0: task 487))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "32",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n7.0 KiB (448.0 B, 448.0 B, 448.0 B (stage 90.0: task 486))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n321 ms (8 ms, 24 ms, 25 ms (stage 90.0: task 484))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 93.0: task 487))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n9.6 KiB (614.0 B, 615.0 B, 617.0 B (stage 90.0: task 472))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "7",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "7",
+            "local bytes read": "734.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "7",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "560.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "5 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "7",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "734.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+      "status": "COMPLETED",
+      "duration_ms": 311,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n168 ms (5 ms, 7 ms, 10 ms (stage 101.0: task 493))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "14",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "28",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n2.2 KiB (1146.0 B, 1146.0 B, 1146.0 B (stage 105.0: task 514))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "14",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n672.0 B (96.0 B, 96.0 B, 96.0 B (stage 101.0: task 491))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n35 ms (4 ms, 5 ms, 5 ms (stage 101.0: task 493))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 105.0: task 514))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n1146.0 B (163.0 B, 164.0 B, 164.0 B (stage 101.0: task 493))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "14",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "14",
+            "local bytes read": "1271.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "14",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "784.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "7 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "14",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "1271.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+      "status": "COMPLETED",
+      "duration_ms": 255,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n141 ms (5 ms, 6 ms, 8 ms (stage 109.0: task 526))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "6.8 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "7",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n6.3 KiB (720.0 B, 960.0 B, 960.0 B (stage 109.0: task 517))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n99 ms (9 ms, 15 ms, 16 ms (stage 109.0: task 521))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n6.8 KiB (759.0 B, 1024.0 B, 1078.0 B (stage 109.0: task 523))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "7",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "14",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n1414.0 B (707.0 B, 707.0 B, 707.0 B (stage 117.0: task 541))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "2",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "560.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "6 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 117.0: task 541))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "707.0 B"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "7",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "7",
+            "local bytes read": "707.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "560.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "4 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "7",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "707.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "description": "B4 DataFrame groupBy: annual summary + multi-group share",
+      "status": "COMPLETED",
+      "duration_ms": 687,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n57 ms (7 ms, 8 ms, 9 ms (stage 122.0: task 546))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "12.7 MiB",
+            "number of output rows": "1,826,011",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "1,554,267",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,554,267",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n21.9 MiB (1393.8 KiB, 1400.8 KiB, 1408.0 KiB (stage 124.0: task 560))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "112",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n94.9 MiB (10.9 MiB, 12.8 MiB, 17.3 MiB (stage 122.0: task 543))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n604 ms (63 ms, 92 ms, 98 ms (stage 122.0: task 547))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 124.0: task 557))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n21.9 MiB (2.5 MiB, 3.0 MiB, 4.0 MiB (stage 122.0: task 543))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "112",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "224",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n19.2 KiB (9.6 KiB, 9.6 KiB, 9.6 KiB (stage 130.0: task 567))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "32",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n7.0 KiB (448.0 B, 448.0 B, 448.0 B (stage 124.0: task 557))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n326 ms (9 ms, 23 ms, 24 ms (stage 124.0: task 562))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 130.0: task 567))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n9.6 KiB (614.0 B, 615.0 B, 617.0 B (stage 124.0: task 551))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "7",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "7",
+            "local bytes read": "734.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "560.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "4 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "7",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "734.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "description": "C1 SQL 1: monthly AI research trends",
+      "status": "COMPLETED",
+      "duration_ms": 434,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n188 ms (6 ms, 8 ms, 10 ms (stage 135.0: task 579))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "6.9 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "7",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n5.7 KiB (648.0 B, 864.0 B, 864.0 B (stage 135.0: task 584))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n67 ms (7 ms, 9 ms, 11 ms (stage 135.0: task 584))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n6.9 KiB (693.0 B, 1075.0 B, 1126.0 B (stage 135.0: task 584))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "4.8 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "8.2 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "1 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "4.8 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "description": "C2 SQL 2: 2025 vs 2026 cross-disciplinary comparison",
+      "status": "COMPLETED",
+      "duration_ms": 374,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "2",
+            "scan time": "total (min, med, max (stageId: taskId))\n18 ms (9 ms, 9 ms, 9 ms (stage 141.0: task 594))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "13 ms",
+            "size of files read": "4.3 MiB",
+            "number of output rows": "636,653",
+            "number of partitions read": "2"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "16",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "16",
+            "local bytes read": "1573.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "2",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n1104.0 B (552.0 B, 552.0 B, 552.0 B (stage 141.0: task 594))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n13 ms (6 ms, 6 ms, 6 ms (stage 141.0: task 594))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n1573.0 B (760.0 B, 813.0 B, 813.0 B (stage 141.0: task 595))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "8",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "16",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n1692.0 B (846.0 B, 846.0 B, 846.0 B (stage 149.0: task 598))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "2",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "680.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "5 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 149.0: task 598))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "846.0 B"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "8",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "8",
+            "local bytes read": "1438.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "1256.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "6 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "8",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "1438.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "description": "D1 Read back SQL outputs and verify",
+      "status": "COMPLETED",
+      "duration_ms": 130,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "1",
+            "scan time": "total (min, med, max (stageId: taskId))\n14 ms (4 ms, 10 ms, 10 ms (stage 155.0: task 601))",
+            "metadata time": "0 ms",
+            "size of files read": "9.0 KiB",
+            "number of output rows": "162"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "8.6 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "48",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "8.9 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "26 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "8.6 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "description": "D1 Read back SQL outputs and verify",
+      "status": "COMPLETED",
+      "duration_ms": 74,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "1",
+            "scan time": "total (min, med, max (stageId: taskId))\n7 ms (3 ms, 4 ms, 4 ms (stage 160.0: task 605))",
+            "metadata time": "0 ms",
+            "size of files read": "5.6 KiB",
+            "number of output rows": "16"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "8",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "8",
+            "local bytes read": "1438.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "8",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "1256.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "5 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "8",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "1438.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "description": "D1 Read back SQL outputs and verify",
+      "status": "COMPLETED",
+      "duration_ms": 156,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n33 ms (4 ms, 5 ms, 5 ms (stage 164.0: task 613))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "12.7 MiB",
+            "number of output rows": "1,826,011",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "7",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "7",
+            "local bytes read": "448.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "7",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n168.0 B (24.0 B, 24.0 B, 24.0 B (stage 164.0: task 613))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n50 ms (6 ms, 7 ms, 7 ms (stage 164.0: task 614))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n448.0 B (64.0 B, 64.0 B, 64.0 B (stage 164.0: task 613))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "description": "D1 Read back SQL outputs and verify",
+      "status": "COMPLETED",
+      "duration_ms": 178,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n250 ms (9 ms, 10 ms, 13 ms (stage 167.0: task 617))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "7",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "7",
+            "local bytes read": "448.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "7",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n168.0 B (24.0 B, 24.0 B, 24.0 B (stage 167.0: task 617))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n54 ms (7 ms, 7 ms, 8 ms (stage 167.0: task 629))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n448.0 B (64.0 B, 64.0 B, 64.0 B (stage 167.0: task 617))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "description": "D1 Read back SQL outputs and verify",
+      "status": "COMPLETED",
+      "duration_ms": 54,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "1",
+            "scan time": "3 ms",
+            "metadata time": "0 ms",
+            "size of files read": "3.0 KiB",
+            "number of output rows": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "1",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1",
+            "local bytes read": "59.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "16.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "0 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "59.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "description": "D1 Read back SQL outputs and verify",
+      "status": "COMPLETED",
+      "duration_ms": 39,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "1",
+            "scan time": "2 ms",
+            "metadata time": "0 ms",
+            "size of files read": "3.1 KiB",
+            "number of output rows": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "1",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1",
+            "local bytes read": "59.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "16.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "1 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "59.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "description": "Partition pruning check: all_years",
+      "status": "COMPLETED",
+      "duration_ms": 222,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "7",
+            "scan time": "total (min, med, max (stageId: taskId))\n146 ms (5 ms, 6 ms, 8 ms (stage 179.0: task 657))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "94.4 MiB",
+            "number of output rows": "1,554,267",
+            "number of partitions read": "7"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "162",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n11.2 KiB (5.6 KiB, 5.6 KiB, 5.6 KiB (stage 181.0: task 670))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "14",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n3.2 KiB (360.0 B, 480.0 B, 480.0 B (stage 179.0: task 654))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n122 ms (16 ms, 17 ms, 18 ms (stage 179.0: task 662))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 181.0: task 670))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n5.6 KiB (678.0 B, 838.0 B, 853.0 B (stage 179.0: task 650))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "12",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "12",
+            "local bytes read": "827.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "384.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "6 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "12",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "827.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "description": "Partition pruning check: year_2025",
+      "status": "COMPLETED",
+      "duration_ms": 113,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "1",
+            "scan time": "total (min, med, max (stageId: taskId))\n19 ms (3 ms, 4 ms, 5 ms (stage 188.0: task 676))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "17.4 MiB",
+            "number of output rows": "284,162",
+            "number of partitions read": "1"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "12",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "24",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n1688.0 B (844.0 B, 844.0 B, 844.0 B (stage 192.0: task 680))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "2",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "480.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "10 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 192.0: task 680))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "844.0 B"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "12",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "12",
+            "local bytes read": "816.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "384.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "8 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "12",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "816.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "description": "Lazy evaluation demo",
+      "status": "COMPLETED",
+      "duration_ms": 365,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "1",
+            "scan time": "total (min, med, max (stageId: taskId))\n70 ms (6 ms, 6 ms, 46 ms (stage 197.0: task 685))",
+            "dynamic partition pruning time": "0 ms",
+            "metadata time": "0 ms",
+            "size of files read": "17.4 MiB",
+            "number of output rows": "284,162",
+            "number of partitions read": "1"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "2",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "4",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n290.0 B (145.0 B, 145.0 B, 145.0 B (stage 201.0: task 689))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "2",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "80.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "3 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 201.0: task 689))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "145.0 B"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "2",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "2",
+            "local bytes read": "133.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "64.0 B",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "1 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "2",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "133.0 B"
+          }
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "description": "Cache experiment: uncached run 1",
+      "status": "COMPLETED",
+      "duration_ms": 10786,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n13.6 s (190 ms, 561 ms, 811 ms (stage 205.0: task 704))",
+            "metadata time": "0 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "783",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,566",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n78.9 KiB (39.5 KiB, 39.5 KiB, 39.5 KiB (stage 209.0: task 717))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "30",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n30.6 KiB (360.0 B, 2.1 KiB, 3.2 KiB (stage 205.0: task 691))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n289 ms (8 ms, 19 ms, 27 ms (stage 205.0: task 692))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 209.0: task 717))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n39.5 KiB (666.0 B, 2.7 KiB, 3.7 KiB (stage 205.0: task 691))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "4.3 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "3.2 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "22 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "4.3 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "description": "Cache experiment: uncached run 2",
+      "status": "COMPLETED",
+      "duration_ms": 10729,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n13.4 s (172 ms, 535 ms, 786 ms (stage 213.0: task 736))",
+            "metadata time": "0 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "783",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,566",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n78.9 KiB (39.5 KiB, 39.5 KiB, 39.5 KiB (stage 217.0: task 745))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "30",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n30.6 KiB (360.0 B, 2.1 KiB, 3.2 KiB (stage 213.0: task 719))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n307 ms (9 ms, 21 ms, 29 ms (stage 213.0: task 720))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 217.0: task 745))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n39.5 KiB (666.0 B, 2.7 KiB, 3.7 KiB (stage 213.0: task 719))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "4.3 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "3.2 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "24 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "4.3 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "description": "Cache experiment: uncached run 3",
+      "status": "COMPLETED",
+      "duration_ms": 11243,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n12.6 s (186 ms, 502 ms, 666 ms (stage 221.0: task 766))",
+            "metadata time": "0 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "783",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,566",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n78.9 KiB (39.5 KiB, 39.5 KiB, 39.5 KiB (stage 225.0: task 773))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "30",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n30.6 KiB (360.0 B, 2.1 KiB, 3.2 KiB (stage 221.0: task 747))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n327 ms (9 ms, 21 ms, 29 ms (stage 221.0: task 752))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 225.0: task 773))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n39.5 KiB (666.0 B, 2.7 KiB, 3.7 KiB (stage 221.0: task 747))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "4.3 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "3.2 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "23 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "4.3 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "description": "Cache experiment: fill cache (count)",
+      "status": "COMPLETED",
+      "duration_ms": 13681,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n12.9 s (204 ms, 538 ms, 748 ms (stage 229.0: task 792))",
+            "metadata time": "0 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "InMemoryTableScan",
+          "metrics": {
+            "number of output rows": "1,554,267"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "25",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "25",
+            "local bytes read": "1445.0 B",
+            "merged fetch fallback count": "0",
+            "local blocks read": "25",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n400.0 B (16.0 B, 16.0 B, 16.0 B (stage 230.0: task 821))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n64 ms (1 ms, 2 ms, 3 ms (stage 230.0: task 816))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "1",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n1445.0 B (56.0 B, 59.0 B, 59.0 B (stage 230.0: task 824))"
+          }
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "description": "Cache experiment: cached run 1",
+      "status": "COMPLETED",
+      "duration_ms": 375,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "scan time": "0 ms",
+            "number of output rows": "0"
+          }
+        },
+        {
+          "nodeName": "InMemoryTableScan",
+          "metrics": {
+            "number of output rows": "1,554,267"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "783",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,566",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n78.9 KiB (39.5 KiB, 39.5 KiB, 39.5 KiB (stage 237.0: task 852))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "30",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n30.6 KiB (360.0 B, 2.1 KiB, 3.2 KiB (stage 233.0: task 826))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n623 ms (9 ms, 46 ms, 58 ms (stage 233.0: task 826))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 237.0: task 852))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n39.5 KiB (666.0 B, 2.7 KiB, 3.7 KiB (stage 233.0: task 826))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "4.3 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "3.2 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "26 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "4.3 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "description": "Cache experiment: cached run 2",
+      "status": "COMPLETED",
+      "duration_ms": 261,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "scan time": "0 ms",
+            "number of output rows": "0"
+          }
+        },
+        {
+          "nodeName": "InMemoryTableScan",
+          "metrics": {
+            "number of output rows": "1,554,267"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "783",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,566",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n78.9 KiB (39.5 KiB, 39.5 KiB, 39.5 KiB (stage 243.0: task 879))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "30",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n30.6 KiB (360.0 B, 2.1 KiB, 3.2 KiB (stage 241.0: task 854))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n1.2 s (34 ms, 92 ms, 98 ms (stage 241.0: task 857))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 243.0: task 879))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n39.5 KiB (666.0 B, 2.7 KiB, 3.7 KiB (stage 241.0: task 854))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "4.3 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "3.2 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "23 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "4.3 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "description": "Cache experiment: cached run 3",
+      "status": "COMPLETED",
+      "duration_ms": 245,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "scan time": "0 ms",
+            "number of output rows": "0"
+          }
+        },
+        {
+          "nodeName": "InMemoryTableScan",
+          "metrics": {
+            "number of output rows": "1,554,267"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "783",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,566",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n78.9 KiB (39.5 KiB, 39.5 KiB, 39.5 KiB (stage 253.0: task 908))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "30",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n30.6 KiB (360.0 B, 2.1 KiB, 3.2 KiB (stage 249.0: task 882))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n1.1 s (23 ms, 75 ms, 84 ms (stage 249.0: task 904))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 253.0: task 908))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n39.5 KiB (666.0 B, 2.7 KiB, 3.7 KiB (stage 249.0: task 882))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "81",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "81",
+            "local bytes read": "4.3 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "1",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "3.2 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "23 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "4.3 KiB"
+          }
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "description": "P4 Spot-check sample of AI rule matches",
+      "status": "COMPLETED",
+      "duration_ms": 16225,
+      "scan_and_exchange_nodes": [
+        {
+          "nodeName": "Scan parquet",
+          "metrics": {
+            "number of files read": "11",
+            "scan time": "total (min, med, max (stageId: taskId))\n14.2 s (178 ms, 549 ms, 862 ms (stage 257.0: task 927))",
+            "metadata time": "0 ms",
+            "size of files read": "2.5 GiB",
+            "number of output rows": "3,224,635"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "517",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "1,034",
+            "local bytes read": "total (min, med, max (stageId: taskId))\n978.4 KiB (489.2 KiB, 489.2 KiB, 489.2 KiB (stage 261.0: task 936))",
+            "merged fetch fallback count": "0",
+            "local blocks read": "30",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "total (min, med, max (stageId: taskId))\n740.1 KiB (39.0 KiB, 51.1 KiB, 57.0 KiB (stage 257.0: task 932))",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "total (min, med, max (stageId: taskId))\n114 ms (5 ms, 7 ms, 9 ms (stage 257.0: task 921))",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "total (min, med, max (stageId: taskId))\n0 ms (0 ms, 0 ms, 0 ms (stage 261.0: task 936))",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "48",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "total (min, med, max (stageId: taskId))\n489.2 KiB (26.0 KiB, 33.5 KiB, 37.2 KiB (stage 257.0: task 932))"
+          }
+        },
+        {
+          "nodeName": "Exchange",
+          "metrics": {
+            "shuffle records written": "36",
+            "remote merged reqs duration": "0 ms",
+            "remote merged blocks fetched": "0",
+            "records read": "36",
+            "local bytes read": "18.1 KiB",
+            "merged fetch fallback count": "0",
+            "local blocks read": "36",
+            "remote merged chunks fetched": "0",
+            "remote blocks read": "0",
+            "data size": "19.6 KiB",
+            "local merged bytes read": "0.0 B",
+            "local merged chunks fetched": "0",
+            "shuffle write time": "21 ms",
+            "remote merged bytes read": "0.0 B",
+            "local merged blocks fetched": "0",
+            "corrupt merged block chunks": "0",
+            "fetch wait time": "0 ms",
+            "remote bytes read": "0.0 B",
+            "number of partitions": "36",
+            "remote reqs duration": "0 ms",
+            "remote bytes read to disk": "0.0 B",
+            "shuffle bytes written": "18.1 KiB"
+          }
+        }
+      ]
+    }
+  ]
+}

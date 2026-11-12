@@ -1,0 +1,90 @@
+== Physical Plan ==
+AdaptiveSparkPlan (14)
++- Sort (13)
+   +- Exchange (12)
+      +- Project (11)
+         +- Project (10)
+            +- HashAggregate (9)
+               +- Exchange (8)
+                  +- HashAggregate (7)
+                     +- HashAggregate (6)
+                        +- Exchange (5)
+                           +- HashAggregate (4)
+                              +- Project (3)
+                                 +- Filter (2)
+                                    +- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [5]: [subject_group#1548, submitted_month#1549, ai_related#1551, mentions_genai_llm#1552, submitted_year#1553]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/outputs/paper_subjects]
+PartitionFilters: [submitted_year#1553 IN (2025,2026)]
+PushedFilters: [IsNotNull(submitted_month), GreaterThanOrEqual(submitted_month,1), LessThanOrEqual(submitted_month,9)]
+ReadSchema: struct<subject_group:string,submitted_month:int,ai_related:boolean,mentions_genai_llm:boolean>
+
+(2) Filter
+Input [5]: [subject_group#1548, submitted_month#1549, ai_related#1551, mentions_genai_llm#1552, submitted_year#1553]
+Condition : ((isnotnull(submitted_month#1549) AND (submitted_month#1549 >= 1)) AND (submitted_month#1549 <= 9))
+
+(3) Project
+Output [4]: [subject_group#1548, ai_related#1551, mentions_genai_llm#1552, submitted_year#1553]
+Input [5]: [subject_group#1548, submitted_month#1549, ai_related#1551, mentions_genai_llm#1552, submitted_year#1553]
+
+(4) HashAggregate
+Input [4]: [subject_group#1548, ai_related#1551, mentions_genai_llm#1552, submitted_year#1553]
+Keys [2]: [subject_group#1548, submitted_year#1553]
+Functions [3]: [partial_count(1), partial_sum(CASE WHEN ai_related#1551 THEN 1 ELSE 0 END), partial_sum(CASE WHEN mentions_genai_llm#1552 THEN 1 ELSE 0 END)]
+Aggregate Attributes [3]: [count#1586L, sum#1587L, sum#1588L]
+Results [5]: [subject_group#1548, submitted_year#1553, count#1589L, sum#1590L, sum#1591L]
+
+(5) Exchange
+Input [5]: [subject_group#1548, submitted_year#1553, count#1589L, sum#1590L, sum#1591L]
+Arguments: hashpartitioning(subject_group#1548, submitted_year#1553, 48), ENSURE_REQUIREMENTS, [plan_id=3215]
+
+(6) HashAggregate
+Input [5]: [subject_group#1548, submitted_year#1553, count#1589L, sum#1590L, sum#1591L]
+Keys [2]: [subject_group#1548, submitted_year#1553]
+Functions [3]: [count(1), sum(CASE WHEN ai_related#1551 THEN 1 ELSE 0 END), sum(CASE WHEN mentions_genai_llm#1552 THEN 1 ELSE 0 END)]
+Aggregate Attributes [3]: [count(1)#1461L, sum(CASE WHEN ai_related#1551 THEN 1 ELSE 0 END)#1462L, sum(CASE WHEN mentions_genai_llm#1552 THEN 1 ELSE 0 END)#1463L]
+Results [5]: [subject_group#1548, submitted_year#1553, count(1)#1461L AS total_papers#1554L, sum(CASE WHEN ai_related#1551 THEN 1 ELSE 0 END)#1462L AS ai_papers#1555L, sum(CASE WHEN mentions_genai_llm#1552 THEN 1 ELSE 0 END)#1463L AS genai_llm_papers#1556L]
+
+(7) HashAggregate
+Input [5]: [subject_group#1548, submitted_year#1553, total_papers#1554L, ai_papers#1555L, genai_llm_papers#1556L]
+Keys [1]: [subject_group#1548]
+Functions [6]: [partial_sum(CASE WHEN (submitted_year#1553 = 2025) THEN total_papers#1554L ELSE 0 END), partial_sum(CASE WHEN (submitted_year#1553 = 2025) THEN ai_papers#1555L ELSE 0 END), partial_sum(CASE WHEN (submitted_year#1553 = 2025) THEN genai_llm_papers#1556L ELSE 0 END), partial_sum(CASE WHEN (submitted_year#1553 = 2026) THEN total_papers#1554L ELSE 0 END), partial_sum(CASE WHEN (submitted_year#1553 = 2026) THEN ai_papers#1555L ELSE 0 END), partial_sum(CASE WHEN (submitted_year#1553 = 2026) THEN genai_llm_papers#1556L ELSE 0 END)]
+Aggregate Attributes [6]: [sum#1574L, sum#1575L, sum#1576L, sum#1577L, sum#1578L, sum#1579L]
+Results [7]: [subject_group#1548, sum#1580L, sum#1581L, sum#1582L, sum#1583L, sum#1584L, sum#1585L]
+
+(8) Exchange
+Input [7]: [subject_group#1548, sum#1580L, sum#1581L, sum#1582L, sum#1583L, sum#1584L, sum#1585L]
+Arguments: hashpartitioning(subject_group#1548, 48), ENSURE_REQUIREMENTS, [plan_id=3219]
+
+(9) HashAggregate
+Input [7]: [subject_group#1548, sum#1580L, sum#1581L, sum#1582L, sum#1583L, sum#1584L, sum#1585L]
+Keys [1]: [subject_group#1548]
+Functions [6]: [sum(CASE WHEN (submitted_year#1553 = 2025) THEN total_papers#1554L ELSE 0 END), sum(CASE WHEN (submitted_year#1553 = 2025) THEN ai_papers#1555L ELSE 0 END), sum(CASE WHEN (submitted_year#1553 = 2025) THEN genai_llm_papers#1556L ELSE 0 END), sum(CASE WHEN (submitted_year#1553 = 2026) THEN total_papers#1554L ELSE 0 END), sum(CASE WHEN (submitted_year#1553 = 2026) THEN ai_papers#1555L ELSE 0 END), sum(CASE WHEN (submitted_year#1553 = 2026) THEN genai_llm_papers#1556L ELSE 0 END)]
+Aggregate Attributes [6]: [sum(CASE WHEN (submitted_year#1553 = 2025) THEN total_papers#1554L ELSE 0 END)#1464L, sum(CASE WHEN (submitted_year#1553 = 2025) THEN ai_papers#1555L ELSE 0 END)#1465L, sum(CASE WHEN (submitted_year#1553 = 2025) THEN genai_llm_papers#1556L ELSE 0 END)#1466L, sum(CASE WHEN (submitted_year#1553 = 2026) THEN total_papers#1554L ELSE 0 END)#1467L, sum(CASE WHEN (submitted_year#1553 = 2026) THEN ai_papers#1555L ELSE 0 END)#1468L, sum(CASE WHEN (submitted_year#1553 = 2026) THEN genai_llm_papers#1556L ELSE 0 END)#1469L]
+Results [7]: [subject_group#1548, sum(CASE WHEN (submitted_year#1553 = 2025) THEN total_papers#1554L ELSE 0 END)#1464L AS total_2025#1564L, sum(CASE WHEN (submitted_year#1553 = 2025) THEN ai_papers#1555L ELSE 0 END)#1465L AS ai_2025#1565L, sum(CASE WHEN (submitted_year#1553 = 2025) THEN genai_llm_papers#1556L ELSE 0 END)#1466L AS genai_llm_2025#1566L, sum(CASE WHEN (submitted_year#1553 = 2026) THEN total_papers#1554L ELSE 0 END)#1467L AS total_2026#1567L, sum(CASE WHEN (submitted_year#1553 = 2026) THEN ai_papers#1555L ELSE 0 END)#1468L AS ai_2026#1568L, sum(CASE WHEN (submitted_year#1553 = 2026) THEN genai_llm_papers#1556L ELSE 0 END)#1469L AS genai_llm_2026#1569L]
+
+(10) Project
+Output [11]: [subject_group#1548, total_2025#1564L, ai_2025#1565L, genai_llm_2025#1566L, total_2026#1567L, ai_2026#1568L, genai_llm_2026#1569L, (cast(ai_2025#1565L as double) / if ((total_2025#1564L = 0)) null else cast(total_2025#1564L as double)) AS ai_share_2025#1484, (cast(ai_2026#1568L as double) / if ((total_2026#1567L = 0)) null else cast(total_2026#1567L as double)) AS ai_share_2026#1485, (cast(genai_llm_2025#1566L as double) / if ((total_2025#1564L = 0)) null else cast(total_2025#1564L as double)) AS genai_llm_share_2025#1486, (cast(genai_llm_2026#1569L as double) / if ((total_2026#1567L = 0)) null else cast(total_2026#1567L as double)) AS genai_llm_share_2026#1487]
+Input [7]: [subject_group#1548, total_2025#1564L, ai_2025#1565L, genai_llm_2025#1566L, total_2026#1567L, ai_2026#1568L, genai_llm_2026#1569L]
+
+(11) Project
+Output [16]: [subject_group#1548, 9 AS months_compared#1443, total_2025#1564L, ai_2025#1565L, ai_share_2025#1484, genai_llm_2025#1566L, genai_llm_share_2025#1486, total_2026#1567L, ai_2026#1568L, ai_share_2026#1485, genai_llm_2026#1569L, genai_llm_share_2026#1487, (100.0 * (ai_share_2026#1485 - ai_share_2025#1484)) AS ai_share_change_pp#1444, (100.0 * (genai_llm_share_2026#1487 - genai_llm_share_2025#1486)) AS genai_llm_share_change_pp#1445, (cast(((ai_2026#1568L - ai_2025#1565L) * 100) as double) / if ((ai_2025#1565L = 0)) null else cast(ai_2025#1565L as double)) AS ai_papers_pct_change#1446, (cast(((total_2026#1567L - total_2025#1564L) * 100) as double) / if ((total_2025#1564L = 0)) null else cast(total_2025#1564L as double)) AS total_papers_pct_change#1447]
+Input [11]: [subject_group#1548, total_2025#1564L, ai_2025#1565L, genai_llm_2025#1566L, total_2026#1567L, ai_2026#1568L, genai_llm_2026#1569L, ai_share_2025#1484, ai_share_2026#1485, genai_llm_share_2025#1486, genai_llm_share_2026#1487]
+
+(12) Exchange
+Input [16]: [subject_group#1548, months_compared#1443, total_2025#1564L, ai_2025#1565L, ai_share_2025#1484, genai_llm_2025#1566L, genai_llm_share_2025#1486, total_2026#1567L, ai_2026#1568L, ai_share_2026#1485, genai_llm_2026#1569L, genai_llm_share_2026#1487, ai_share_change_pp#1444, genai_llm_share_change_pp#1445, ai_papers_pct_change#1446, total_papers_pct_change#1447]
+Arguments: rangepartitioning(total_2026#1567L DESC NULLS LAST, 48), ENSURE_REQUIREMENTS, [plan_id=3224]
+
+(13) Sort
+Input [16]: [subject_group#1548, months_compared#1443, total_2025#1564L, ai_2025#1565L, ai_share_2025#1484, genai_llm_2025#1566L, genai_llm_share_2025#1486, total_2026#1567L, ai_2026#1568L, ai_share_2026#1485, genai_llm_2026#1569L, genai_llm_share_2026#1487, ai_share_change_pp#1444, genai_llm_share_change_pp#1445, ai_papers_pct_change#1446, total_papers_pct_change#1447]
+Arguments: [total_2026#1567L DESC NULLS LAST], true, 0
+
+(14) AdaptiveSparkPlan
+Output [16]: [subject_group#1548, months_compared#1443, total_2025#1564L, ai_2025#1565L, ai_share_2025#1484, genai_llm_2025#1566L, genai_llm_share_2025#1486, total_2026#1567L, ai_2026#1568L, ai_share_2026#1485, genai_llm_2026#1569L, genai_llm_share_2026#1487, ai_share_change_pp#1444, genai_llm_share_change_pp#1445, ai_papers_pct_change#1446, total_papers_pct_change#1447]
+Arguments: isFinalPlan=false
+
+

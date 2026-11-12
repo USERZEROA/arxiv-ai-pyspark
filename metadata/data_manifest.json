@@ -24,7 +24,9 @@
     "parquet_total_bytes": 2700966734,
     "parquet_total_gb_decimal": 2.701,
     "parquet_total_gib": 2.515,
-    "spark_row_count": null
+    "spark_row_count": 3224635,
+    "spark_row_count_measured_utc": "2026-11-12T01:48:15+00:00",
+    "spark_application_id": "local-1794448093838"
   },
   "files": [
     {

@@ -1,0 +1,103 @@
+stratum,id,title,categories,first_ai_term,first_genai_term,is_ai_category,mentions_ai_terms,mentions_genai_llm,ai_related,abstract_start
+AI: category + text,2109.10442,Selecting Datasets for Evaluating an Enhanced Deep Learning Framework,cs.LG,Deep Learning,,True,True,False,True,"  A framework was developed to address limitations associated with existing
+techniques for analysing sequences. This work deals with the steps followed to
+select suitable datasets characterised by discrete irregular sequential
+patterns. To identify, select, explore and evaluate which datasets from v"
+AI: category + text,2211.00151,A Close Look into the Calibration of Pre-trained Language Models,cs.CL cs.LG,Language Models,,True,True,False,True,"  Pre-trained language models (PLMs) may fail in giving reliable estimates of
+their predictive uncertainty. We take a close look into this problem, aiming to
+answer two questions: (1) Do PLMs learn to become calibrated in the training
+process? (2) How effective are existing calibration methods? For "
+AI: category + text,2301.13036,Federated Learning for Water Consumption Forecasting in Smart Cities,cs.LG,Federated Learning,,True,True,False,True,"  Water consumption remains a major concern among the world's future
+challenges. For applications like load monitoring and demand response, deep
+learning models are trained using enormous volumes of consumption data in smart
+cities. On the one hand, the information used is private. For instance, the"
+AI: category + text,2305.03517,Few-shot Domain-Adaptive Visually-fused Event Detection from Text,cs.CL cs.AI,language models,vision language models,True,True,True,True,"  Incorporating auxiliary modalities such as images into event detection models
+has attracted increasing interest over the last few years. The complexity of
+natural language in describing situations has motivated researchers to leverage
+the related visual context to improve event detection performan"
+AI: category + text,2504.15257,FlowReasoner: Reinforcing Query-Level Meta-Agents,cs.AI,reinforcement learning,,True,True,False,True,"  This paper proposes a query-level meta-agent named FlowReasoner to automate
+the design of query-level multi-agent systems, i.e., one system per user query.
+Our core idea is to incentivize a reasoning-based meta-agent via external
+execution feedback. Concretely, by distilling DeepSeek R1, we first "
+AI: category + text,2604.07165,"Reason in Chains, Learn in Trees: Self-Rectification and Grafting for Multi-turn Agent Policy Optimization",cs.AI cs.LG,Reinforcement learning,Large Language Model,True,True,True,True,"Reinforcement learning for Large Language Model agents is often hindered by sparse rewards in multi-step reasoning tasks. Existing approaches like Group Relative Policy Optimization treat sampled trajectories as independent chains, assigning uniform credit to all steps in each chain and ignoring the"
+AI: category only,2101.07832,"The Devils in the Point Clouds: Studying the Robustness of Point Cloud
+  Convolutions",cs.CV cs.LG,,,True,False,False,True,"  Recently, there has been a significant interest in performing convolution
+over irregularly sampled point clouds. Since point clouds are very different
+from regular raster images, it is imperative to study the generalization of the
+convolution networks more closely, especially their robustness unde"
+AI: category only,2108.07895,Adaptive Convolutions with Per-pixel Dynamic Filter Atom,cs.CV,,,True,False,False,True,"  Applying feature dependent network weights have been proved to be effective
+in many fields. However, in practice, restricted by the enormous size of model
+parameters and memory footprints, scalable and versatile dynamic convolutions
+with per-pixel adapted filters are yet to be fully explored. In t"
+AI: category only,2211.06182,"An introduction to computational complexity and statistical learning
+  theory applied to nuclear models",nucl-th cs.LG,,,True,False,False,True,"  The fact that we can build models from data, and therefore refine our models
+with more data from experiments, is usually given for granted in scientific
+inquiry. However, how much information can we extract, and how precise can we
+expect our learned model to be, if we have only a finite amount of "
+AI: category only,2412.02596,"Class-wise Autoencoders Measure Classification Difficulty And Detect
+  Label Mistakes",cs.LG cs.CV,,,True,False,False,True,"  We introduce a new framework for analyzing classification datasets based on
+the ratios of reconstruction errors between autoencoders trained on individual
+classes. This analysis framework enables efficient characterization of datasets
+on the sample, class, and entire dataset levels. We define reco"
+AI: category only,2604.10055,STRONG-VLA: Decoupled Robustness Learning for Vision-Language-Action Models under Multimodal Perturbations,cs.RO,,,True,False,False,True,"Despite their strong performance in embodied tasks, recent Vision-Language-Action (VLA) models remain highly fragile under multimodal perturbations, where visual corruption and linguistic noise jointly induce distribution shifts that degrade task-level execution. Existing robustness approaches typic"
+AI: category only,2609.38897,FFASR: Benchmarking Far-Field Automatic Speech Recognition using High-Fidelity Simulated RIRs,cs.SD cs.AI cs.PF,,,True,False,False,True,"Far-field automatic speech recognition(ASR) degrades under reverberation, noise, and talker motion, yet the benchmarks that drive model selection emphasize close-microphone speech. We present FFASR, a held-out corpus of 15,637 utterances and an open leaderboard spanning nine conditions, each varying"
+AI: text only,2212.07682,Min-max Submodular Ranking for Multiple Agents,cs.DS,machine learning,,False,True,False,True,"  In the submodular ranking (SR) problem, the input consists of a set of
+submodular functions defined on a ground set of elements. The goal is to order
+elements for all the functions to have value above a certain threshold as soon
+on average as possible, assuming we choose one element per time. The "
+AI: text only,2306.08310,TWIGMA: A dataset of AI-Generated Images with Metadata From Twitter,stat.AP cs.CY,artificial intelligence,generative artificial intelligence,False,True,True,True,"  Recent progress in generative artificial intelligence (gen-AI) has enabled
+the generation of photo-realistic and artistically-inspiring photos at a single
+click, catering to millions of users online. To explore how people use gen-AI
+models such as DALLE and StableDiffusion, it is critical to under"
+AI: text only,2505.07730,"Reproducibility, Replicability, and Insights into Visual Document Retrieval with Late Interaction",cs.IR,language models,vision language models,False,True,True,True,"Visual Document Retrieval (VDR) is an emerging research area that focuses on encoding and retrieving document images directly, bypassing the dependence on Optical Character Recognition (OCR) for document search. A recent advance in VDR was introduced by ColPali, which significantly improved retrieva"
+AI: text only,2505.14515,Data-Driven Modeling Approaches for Optimal Control and Control Co-Design of Floating Offshore Wind Turbines,eess.SY cs.SY,deep learning,,False,True,False,True,"Models that balance accuracy against computational costs are advantageous when designing wind turbines with optimization studies, as several hundred predictive function evaluations might be necessary to identify the optimal solution. We explore different approaches to construct low-fidelity models t"
+AI: text only,2602.01883,Convergence of high-index saddle dynamics for degenerate saddle points on critical manifolds,math.NA cs.NA,neural network,,False,True,False,True,"The high-index saddle dynamics (HiSD) method provides a powerful framework for finding saddle points and constructing solution landscapes. While originally derived for nondegenerate critical points, HiSD has demonstrated empirical success in degenerate cases, where the Hessian matrix exhibits zero e"
+AI: text only,2608.08543,Rethinking Higher Education: From Fixed Curricula to Learnity Graphs,cs.CY,Artificial Intelligence,,False,True,False,True,"Higher education stands at a turning point. In an era where knowledge is increasingly accessible and which is, more often than not, mediated by advanced Artificial Intelligence (AI), the value of traditional curricula models warrants reconsideration. This does not imply that one should replace thoro"
+"AI: text only, GenAI via 'LLM' acronym only",2506.00045,ACE-Step: A Step Towards Music Generation Foundation Model,cs.SD eess.AS,,LLM,False,True,True,True,"We introduce ACE-Step, a novel open-source foundation model for music generation that overcomes key limitations of existing approaches and achieves state-of-the-art performance through a holistic architectural design. Current methods face inherent trade-offs between generation speed, musical coheren"
+"AI: text only, GenAI via 'LLM' acronym only",2510.02609,RedCodeAgent: Automatic Red-teaming Agent against Diverse Code Agents,cs.SE,,LLM,False,True,True,True,"Code agents have gained widespread adoption due to their strong code generation capabilities and integration with code interpreters, enabling dynamic execution, debugging, and interactive programming capabilities. While these advancements have streamlined complex workflows, they have also introduced"
+"AI: text only, GenAI via 'LLM' acronym only",2511.00678,Repairing Responsive Layout Failures Using Retrieval Augmented Generation,cs.SE,,LLM,False,True,True,True,"Responsive websites frequently experience distorted layouts at specific screen sizes, called Responsive Layout Failures (RLFs). Manually repairing these RLFs involves tedious trial-and-error adjustments of HTML elements and CSS properties. In this study, an automated repair approach, leveraging LLM "
+"AI: text only, GenAI via 'LLM' acronym only",2601.15139,Investigating Notable Metadata Practices in PyPI Libraries: An Empirical Study about Repository and Donation Platform URLs,cs.SE,,LLM,False,True,True,True,"Background: Open source software (OSS) libraries are critical components of modern software systems, yet their metadata-particularly links to source code repositories and donation platforms-is often incomplete, outdated, or inconsistent. Such deficiencies hinder dependency monitoring, security asses"
+"AI: text only, GenAI via 'LLM' acronym only",2606.13037,DIG: Oracle-Guided Directed Input Generation for One-Day Vulnerabilities,cs.CR cs.SE,,LLM,False,True,True,True,One-day vulnerabilities pose significant risks due to delayed or incomplete patch adoption. Generating proof-of-concept (PoC) inputs is therefore essential for assessing real-world impact. The key challenge is identifying necessary constraints for triggering the vulnerability and solving them effect
+"AI: text only, GenAI via 'LLM' acronym only",2608.10139,AI Query Compilation for Unified and Optimized Execution,cs.DB,,LLM,False,True,True,True,"In this vision paper, we propose a novel architectural paradigm for accelerated AI query execution via a unified compiled execution strategy. By compiling the hybrid AI Query as a whole -- integrating both standard SQL relational constructs and LLM inference layers into a single, unified tensor comp"
+Not AI: has ambiguous word (transformer/diffusion/agent/attention),2003.04353,"Long-Range Exciton Diffusion in Two-Dimensional Assemblies of Cesium
+  Lead Bromide Perovskite Nanocrystals",physics.app-ph,,,False,False,False,False,"  F\""orster Resonant Energy Transfer (FRET)-mediated exciton diffusion through
+artificial nanoscale building block assemblies could be used as a new
+optoelectronic design element to transport energy. However, so far nanocrystal
+(NC) systems supported only diffusion length of 30 nm, which are too sma"
+Not AI: has ambiguous word (transformer/diffusion/agent/attention),2005.07148,Applying Droplets and Films in Evaporative Lithography,physics.app-ph cond-mat.soft,,,False,False,False,False,"  This review covers experimental results of evaporative lithography and
+analyzes existing mathematical models of this method. Evaporating droplets and
+films are used in different fields, such as cooling of heated surfaces of
+electronic devices, diagnostics in health care, creation of transparent
+co"
+Not AI: has ambiguous word (transformer/diffusion/agent/attention),2110.04045,"Effect of Visual Cues on Pointing Tasks in Co-located Augmented Reality
+  Collaboration",cs.HC,,,False,False,False,False,"  Visual cues are essential in computer-mediated communication. It is
+especially important when communication happens in a collaboration scenario
+that requires focusing several users' attention on aspecific object among other
+similar ones. This paper explores the effect of visual cues on pointing ta"
+Not AI: has ambiguous word (transformer/diffusion/agent/attention),2404.07809,"The Cattaneo-Christov approximation of Fourier heat-conductive
+  compressible fluids",math.AP,,,False,False,False,False,"  We investigate the Navier-Stokes-Cattaneo-Christov (NSC) system in
+$\mathbb{R}^d$ ($d\geq3$), a model of heat-conductive compressible flows
+serving as a finite speed of propagation approximation of the
+Navier-Stokes-Fourier (NSF) system. Due to the presence of Oldroyd's
+upper-convected derivatives"
+Not AI: has ambiguous word (transformer/diffusion/agent/attention),2411.05526,Giant Rabi frequencies between qubit and excited hole states in silicon quantum dots,cond-mat.mes-hall quant-ph,,,False,False,False,False,"Holes in Si quantum dots are being investigated for the implementation of electrically addressable spin qubits. In this perspective, the attention has been focused on the electric-field induced transitions between the eigenstates belonging to the ground doublet. Here we theoretically extend the anal"
+Not AI: has ambiguous word (transformer/diffusion/agent/attention),2606.28125,"How Humans, Bots, and Agents Communicate About Vulnerabilities in Pull Requests",cs.SE cs.CR,,,False,False,False,False,"Developers may reference vulnerabilities in pull request discussions through both explicit identifiers, such as CVEs or GHSAs, and implicit security-related language (e.g., ""unauthorized access"" or ""SQL injection""). Prior work has primarily focused on explicit identifiers, potentially overlooking vu"
+Not AI: other,2001.11887,Identifying Multiple Populations in M71 Using CN,astro-ph.SR astro-ph.GA,,,False,False,False,False,"  We have observed the CN features at $\sim$3800 ~\AA~ and 4120~ \AA~ as well
+as the CH band at $\sim$4300~\AA~ for 145 evolved stars in the Galactic
+globular cluster M71 using the multi-object spectrograph, Hydra, on the
+WIYN-3.5m telescope. We use these measurements to create two $\delta$CN indice"
+Not AI: other,2311.03501,Maximum A Posteriori Direction-of-Arrival Estimation via Mixed-Integer Semidefinite Programming,eess.SP,,,False,False,False,False,"We propose a joint sparse maximum a posteriori (MAP) estimator for DOA estimation from multiple snapshots, reformulated as a mixed-integer semidefinite program (MISDP). This enables efficient computation of globally optimal solutions using off-the-shelf MISDP solvers based on the branch-and-bound me"
+Not AI: other,2401.05797,STAKESURE: Proof of Stake Mechanisms with Strong Cryptoeconomic Safety,cs.CR cs.NI,,,False,False,False,False,"  As of July 15, 2023, Ethererum, which is a Proof-of-Stake (PoS) blockchain
+[1] has around 410 Billion USD in total assets on chain (popularly referred to
+as total-value-locked, TVL) but has only 33 Billion USD worth of ETH staked in
+securing the underlying consensus of the chain [2]. A preliminary"
+Not AI: other,2403.08949,"Studying time-like proton form factors using vortex state $p\bar{p}$
+  annihilation",hep-ph quant-ph,,,False,False,False,False,"  Vortex states of particles - non-plane-wave solutions of the corresponding
+wave equation with a helicoidal wave front - open new opportunities for
+particle physics, unavailable in plane wave scattering. Here we demonstrate
+that $p\bar p$ annihilation with a vortex proton and antiproton provides ac"
+Not AI: other,2502.21061,Non-Gaussian velocity distributions Maxwell would understand,cond-mat.stat-mech,,,False,False,False,False,"  In 1988, Constantino Tsallis proposed an extension of the Boltzmann
+statistical mechanics by postulating a new entropy formula, $S_q = k_B\ln_q W$,
+where $W$ is the number of microstates accessible to the system, and $\ln_q$
+defines a deformation of the logarithmic function. This ``top-down"" , app"
+Not AI: other,2609.27390,Higher-order Spatially Separated Correlations and Quantum Magic in the Long-range Transverse Field Ising Model,quant-ph,,,False,False,False,False,"Long-range interacting quantum systems exhibit interesting phenomena beyond the nearest-neighbours regime. Such interactions can reach further separated particles and change the behaviour of many-body correlations. Here, we analyse their structure in the antiferromagnetic long-range interaction tran"

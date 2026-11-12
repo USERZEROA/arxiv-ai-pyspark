@@ -1,0 +1,52 @@
+== Physical Plan ==
+AdaptiveSparkPlan (8)
++- Sort (7)
+   +- Exchange (6)
+      +- HashAggregate (5)
+         +- Exchange (4)
+            +- HashAggregate (3)
+               +- Project (2)
+                  +- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [3]: [submitted_month#1852, ai_related#1858, submitted_year#1861]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/outputs/papers_clean]
+ReadSchema: struct<submitted_month:int,ai_related:boolean>
+
+(2) Project
+Output [2]: [submitted_month#1852, ai_related#1858]
+Input [3]: [submitted_month#1852, ai_related#1858, submitted_year#1861]
+
+(3) HashAggregate
+Input [2]: [submitted_month#1852, ai_related#1858]
+Keys [1]: [submitted_month#1852]
+Functions [2]: [partial_count(1), partial_avg(cast(ai_related#1858 as int))]
+Aggregate Attributes [3]: [count#1881L, sum#1882, count#1883L]
+Results [4]: [submitted_month#1852, count#1884L, sum#1885, count#1886L]
+
+(4) Exchange
+Input [4]: [submitted_month#1852, count#1884L, sum#1885, count#1886L]
+Arguments: hashpartitioning(submitted_month#1852, 48), ENSURE_REQUIREMENTS, [plan_id=3777]
+
+(5) HashAggregate
+Input [4]: [submitted_month#1852, count#1884L, sum#1885, count#1886L]
+Keys [1]: [submitted_month#1852]
+Functions [2]: [count(1), avg(cast(ai_related#1858 as int))]
+Aggregate Attributes [2]: [count(1)#1878L, avg(cast(ai_related#1858 as int))#1879]
+Results [3]: [submitted_month#1852, count(1)#1878L AS papers#1862L, avg(cast(ai_related#1858 as int))#1879 AS ai_share#1863]
+
+(6) Exchange
+Input [3]: [submitted_month#1852, papers#1862L, ai_share#1863]
+Arguments: rangepartitioning(submitted_month#1852 ASC NULLS FIRST, 48), ENSURE_REQUIREMENTS, [plan_id=3780]
+
+(7) Sort
+Input [3]: [submitted_month#1852, papers#1862L, ai_share#1863]
+Arguments: [submitted_month#1852 ASC NULLS FIRST], true, 0
+
+(8) AdaptiveSparkPlan
+Output [3]: [submitted_month#1852, papers#1862L, ai_share#1863]
+Arguments: isFinalPlan=false
+
+

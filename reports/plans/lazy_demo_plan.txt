@@ -1,0 +1,27 @@
+== Physical Plan ==
+* Project (4)
++- * Filter (3)
+   +- * ColumnarToRow (2)
+      +- Scan parquet  (1)
+
+
+(1) Scan parquet 
+Output [14]: [id#1942, title#1943, update_date#1944, submitted_date#1945, submitted_month#1946, month_start#1947, category_list#1948, is_ai_category#1949, mentions_ai_terms#1950, mentions_genai_llm#1951, ai_related#1952, text_available#1953, abstract_available#1954, submitted_year#1955]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/outputs/papers_clean]
+PartitionFilters: [isnotnull(submitted_year#1955), (submitted_year#1955 = 2025)]
+PushedFilters: [IsNotNull(ai_related), EqualTo(ai_related,true)]
+ReadSchema: struct<id:string,title:string,update_date:timestamp_ntz,submitted_date:date,submitted_month:int,month_start:date,category_list:array<string>,is_ai_category:boolean,mentions_ai_terms:boolean,mentions_genai_llm:boolean,ai_related:boolean,text_available:boolean,abstract_available:boolean>
+
+(2) ColumnarToRow [codegen id : 1]
+Input [14]: [id#1942, title#1943, update_date#1944, submitted_date#1945, submitted_month#1946, month_start#1947, category_list#1948, is_ai_category#1949, mentions_ai_terms#1950, mentions_genai_llm#1951, ai_related#1952, text_available#1953, abstract_available#1954, submitted_year#1955]
+
+(3) Filter [codegen id : 1]
+Input [14]: [id#1942, title#1943, update_date#1944, submitted_date#1945, submitted_month#1946, month_start#1947, category_list#1948, is_ai_category#1949, mentions_ai_terms#1950, mentions_genai_llm#1951, ai_related#1952, text_available#1953, abstract_available#1954, submitted_year#1955]
+Condition : (isnotnull(ai_related#1952) AND ai_related#1952)
+
+(4) Project [codegen id : 1]
+Output [15]: [id#1942, title#1943, update_date#1944, submitted_date#1945, submitted_month#1946, month_start#1947, category_list#1948, is_ai_category#1949, mentions_ai_terms#1950, mentions_genai_llm#1951, ai_related#1952, text_available#1953, abstract_available#1954, submitted_year#1955, size(split(trim(title#1943, None), \s+, -1), false) AS title_words#1957]
+Input [14]: [id#1942, title#1943, update_date#1944, submitted_date#1945, submitted_month#1946, month_start#1947, category_list#1948, is_ai_category#1949, mentions_ai_terms#1950, mentions_genai_llm#1951, ai_related#1952, text_available#1953, abstract_available#1954, submitted_year#1955]
+
+

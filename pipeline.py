@@ -325,6 +325,19 @@ def multi_group_summary(paper_subjects: DataFrame) -> DataFrame:
     )
 
 
+def crosslist_check(papers: DataFrame) -> DataFrame:
+    """How often cs.LG papers are also listed in stat.ML, by half-year.
+    Used to interpret the multi-group share (stat.ML belongs to Statistics)."""
+    has = lambda c: F.array_contains("category_list", c)  # noqa: E731
+    half = F.when(F.col("submitted_month") <= 6, "H1").otherwise("H2")
+    return (papers.filter(has("cs.LG"))
+            .groupBy("submitted_year", half.alias("half_year"))
+            .agg(F.count("*").alias("cs_lg_papers"),
+                 F.sum(has("stat.ML").cast("int")).alias("also_stat_ml"))
+            .withColumn("share_also_stat_ml", F.col("also_stat_ml") / F.col("cs_lg_papers"))
+            .orderBy("submitted_year", "half_year"))
+
+
 def read_sql(name: str) -> str:
     return (SQL_DIR / name).read_text(encoding="utf-8")
 
@@ -406,7 +419,15 @@ def monthly_coverage(raw: DataFrame) -> DataFrame:
 
 
 def duplicate_id_report(raw: DataFrame) -> DataFrame:
-    df = add_time_columns(with_submission_date(raw.select(*NEEDED_COLUMNS)))
+    """Details of duplicated ids.
+
+    Optimised after the first full run: grouping the full rows (with abstracts) by
+    id shuffled 2.3 GiB. Now only the id column is shuffled to find duplicated ids,
+    and the few matching rows are fetched with a broadcast LEFT SEMI join.
+    """
+    dup_ids = raw.select("id").groupBy("id").count().filter("count > 1").select("id")
+    df = raw.select(*NEEDED_COLUMNS).join(F.broadcast(dup_ids), on="id", how="left_semi")
+    df = add_time_columns(with_submission_date(df))
     return (df.groupBy("id")
             .agg(F.count("*").alias("n_rows"),
                  F.countDistinct("title", "abstract", "categories", "update_date").alias("n_distinct_versions"),
@@ -717,7 +738,7 @@ def main():
         manifest["locally_measured"]["spark_application_id"] = env["application_id"]
         write_json(MANIFEST, manifest)
 
-    with stage(spark, "A2_quality", "A2 Data quality checks (one aggregation over pruned columns)"):
+    with stage(spark, "A2_quality", "A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)"):
         qa = run_quality_checks(raw)
         coverage = monthly_coverage(raw).toPandas()
         dups = duplicate_id_report(raw).toPandas()
@@ -782,9 +803,11 @@ def main():
         unknown = (joined.filter(F.col("subject_group") == "Unknown")
                    .groupBy("category_id").agg(F.count("*").alias("rows"), F.countDistinct("id").alias("papers"))
                    .orderBy(F.desc("rows")).toPandas())
-        subjects = build_paper_subjects(papers, categories)
+        # Written partitioned by year as well, so SQL 2 (2025 + 2026 only) can prune
+        # the other year folders. repartition -> one file per year folder.
+        subjects = build_paper_subjects(papers, categories).repartition("submitted_year")
         save_plan(subjects, paths.plans / "B3_paper_subjects.txt")
-        subjects.write.mode("overwrite").parquet(paths.out("paper_subjects"))
+        subjects.write.mode("overwrite").partitionBy("submitted_year").parquet(paths.out("paper_subjects"))
     unknown.to_csv(paths.reports / "unknown_categories.csv", index=False)
     check("taxonomy key category_id is unique", cat_stats["rows"] == cat_stats["ids"],
           f"{cat_stats['rows']} rows / {cat_stats['ids']} ids")
@@ -802,6 +825,7 @@ def main():
         annual_pd = annual.toPandas()
         multi = multi_group_summary(subjects)
         multi_pd = multi.toPandas()
+        crosslist_check(papers).toPandas().to_csv(paths.reports / "cs_lg_stat_ml_crosslist.csv", index=False)
         annual.write.mode("overwrite").parquet(paths.out("annual_summary"))
         multi.write.mode("overwrite").parquet(paths.out("multi_group_by_year"))
     check("paper_subjects unique on (id, subject_group)", subj_stats["rows"] == subj_stats["pairs"])

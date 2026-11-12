@@ -1,19 +1,21 @@
-"""Take real screenshots of the Spark UI (and of the run log) with a headless browser.
+"""Screenshots of the Spark UI and of the run log, taken with headless Chrome.
 
-Two ways to use it:
+The Spark UI only exists while the application is running, so the UI pages are
+captured from inside pipeline.py:
 
-1. Live UI, from inside the pipeline (recommended, done for the graded run):
-       python pipeline.py --capture-ui
-   pipeline.py creates LiveUICapture(spark, "screenshots") and calls
-   .storage() while the cache is materialised and .final_pages() right before
-   spark.stop(), so the screenshots show the same application as the reports.
+    python pipeline.py --capture-ui
 
-2. Run-log screenshot after the pipeline has finished:
-       python capture_screenshots.py --log reports/run_log.txt
-   This renders the real console log file in a terminal-style page and
-   screenshots it (it is labelled as a rendering of the log file, not a UI page).
+storage() is called while the cache experiment's DataFrame is cached and
+final_pages() just before spark.stop(), so every picture belongs to the same
+run as the files in reports/.
 
-Uses the locally installed Google Chrome through Playwright (no browser download).
+The console log of a finished run can be turned into an image with:
+
+    python capture_screenshots.py --log reports/run_log.txt
+
+(that image shows the log file's text, it is not a Spark UI page).
+
+Playwright drives the Google Chrome that is already installed on the machine.
 """
 
 import argparse
@@ -50,15 +52,9 @@ class LiveUICapture:
         with urllib.request.urlopen(url, timeout=60) as r:
             return json.load(r)
 
-    def _shot(self, page, path, name, caption, full_page=True, expand_plan=False, max_height=None):
+    def _shot(self, page, path, name, caption, full_page=True, max_height=None):
         page.goto(self.base + path, wait_until="networkidle")
         page.wait_for_timeout(1500)  # DAG/timeline are drawn by JavaScript
-        if expand_plan:
-            page.evaluate("""() => {
-                const d = document.getElementById('physical-plan-details');
-                if (d) d.style.display = 'block';
-            }""")
-            page.wait_for_timeout(300)
         file = self.out / name
         if max_height:
             height = min(page.evaluate("document.body.scrollHeight"), max_height)

@@ -1,0 +1,81 @@
+== Physical Plan ==
+AdaptiveSparkPlan (14)
++- HashAggregate (13)
+   +- Exchange (12)
+      +- HashAggregate (11)
+         +- InMemoryTableScan (1)
+               +- InMemoryRelation (2)
+                     +- * Project (10)
+                        +- * Project (9)
+                           +- * Project (8)
+                              +- * Project (7)
+                                 +- * Project (6)
+                                    +- * Filter (5)
+                                       +- * ColumnarToRow (4)
+                                          +- Scan parquet  (3)
+
+
+(1) InMemoryTableScan
+Output [1]: [month_start#1999]
+Arguments: [month_start#1999]
+
+(2) InMemoryRelation
+Arguments: [id#0, title#3, update_date#12, submitted_date#1996, submitted_year#1997, submitted_month#1998, month_start#1999, category_list#2000, is_ai_category#2005, mentions_ai_terms#2007, mentions_genai_llm#2006, ai_related#2008, text_available#2003, abstract_available#2004], StorageLevel(disk, memory, deserialized, 1 replicas)
+
+(3) Scan parquet 
+Output [6]: [id#0, title#3, categories#8, abstract#10, versions#11, update_date#12]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/data/raw/arxiv-metadata-snapshot/data/train-00000-of-00011.parquet, ... 10 entries]
+PushedFilters: [IsNotNull(update_date), IsNotNull(id), GreaterThanOrEqual(update_date,2020-01-01T00:00)]
+ReadSchema: struct<id:string,title:string,categories:string,abstract:string,versions:array<struct<version:string,created:string>>,update_date:timestamp_ntz>
+
+(4) ColumnarToRow [codegen id : 1]
+Input [6]: [id#0, title#3, categories#8, abstract#10, versions#11, update_date#12]
+
+(5) Filter [codegen id : 1]
+Input [6]: [id#0, title#3, categories#8, abstract#10, versions#11, update_date#12]
+Condition : ((((((isnotnull(update_date#12) AND isnotnull(id#0)) AND NOT (trim(id#0, None) = )) AND (update_date#12 >= 2020-01-01 00:00:00)) AND isnotnull(gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_6#1994.version = v1), lambda x_6#1994, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false))) AND (gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_6#1994.version = v1), lambda x_6#1994, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false) >= 2020-01-01 00:00:00)) AND (gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_6#1994.version = v1), lambda x_6#1994, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false) < 2026-10-01 00:00:00))
+
+(6) Project [codegen id : 1]
+Output [6]: [id#0, title#3, abstract#10, categories#8, update_date#12, cast(gettimestamp(regexp_replace(filter(versions#11, lambdafunction((lambda x_6#1994.version = v1), lambda x_6#1994, false))[0].created, ^\s*[A-Za-z]{3},\s*, , 1), d MMM yyyy HH:mm:ss z, TimestampType, try_to_timestamp, Some(UTC), false) as date) AS submitted_date#1996]
+Input [6]: [id#0, title#3, categories#8, abstract#10, versions#11, update_date#12]
+
+(7) Project [codegen id : 1]
+Output [11]: [id#0, title#3, update_date#12, submitted_date#1996, year(submitted_date#1996) AS submitted_year#1997, month(submitted_date#1996) AS submitted_month#1998, trunc(submitted_date#1996, month) AS month_start#1999, array_distinct(filter(split(trim(coalesce(categories#8, ), None), \s+, -1), lambdafunction(NOT (lambda x_7#2001 = ), lambda x_7#2001, false))) AS category_list#2000, regexp_replace(concat_ws( , coalesce(title#3, ), coalesce(abstract#10, )), [\s\-‐-―_]+,  , 1) AS norm_text#2002, ((length(trim(coalesce(title#3, ), None)) > 0) OR (length(trim(coalesce(abstract#10, ), None)) > 0)) AS text_available#2003, (length(trim(coalesce(abstract#10, ), None)) > 0) AS abstract_available#2004]
+Input [6]: [id#0, title#3, abstract#10, categories#8, update_date#12, submitted_date#1996]
+
+(8) Project [codegen id : 1]
+Output [13]: [id#0, title#3, update_date#12, submitted_date#1996, submitted_year#1997, submitted_month#1998, month_start#1999, category_list#2000, norm_text#2002, text_available#2003, abstract_available#2004, arrays_overlap(category_list#2000, [cs.AI,cs.LG,cs.CL,cs.CV,cs.RO,cs.MA,cs.NE,stat.ML]) AS is_ai_category#2005, RLIKE(norm_text#2002, (?:(?i)\b(?:generative (?:ai|artificial intelligence)|large language models?|vision language models?|chatgpt|gpt ?[2-5](?:\.5)?o?|generative pre ?trained transformers?)\b)|(?:\bLLMs?\b)) AS mentions_genai_llm#2006]
+Input [11]: [id#0, title#3, update_date#12, submitted_date#1996, submitted_year#1997, submitted_month#1998, month_start#1999, category_list#2000, norm_text#2002, text_available#2003, abstract_available#2004]
+
+(9) Project [codegen id : 1]
+Output [13]: [id#0, title#3, update_date#12, submitted_date#1996, submitted_year#1997, submitted_month#1998, month_start#1999, category_list#2000, text_available#2003, abstract_available#2004, is_ai_category#2005, mentions_genai_llm#2006, (RLIKE(norm_text#2002, (?i)\b(?:artificial intelligence|machine learning|deep learning|neural networks?|reinforcement learning|(?:self |semi |un)?supervised learning|natural language processing|computer vision|generative adversarial networks?|language models?|transfer learning|federated learning|representation learning)\b) OR mentions_genai_llm#2006) AS mentions_ai_terms#2007]
+Input [13]: [id#0, title#3, update_date#12, submitted_date#1996, submitted_year#1997, submitted_month#1998, month_start#1999, category_list#2000, norm_text#2002, text_available#2003, abstract_available#2004, is_ai_category#2005, mentions_genai_llm#2006]
+
+(10) Project [codegen id : 1]
+Output [14]: [id#0, title#3, update_date#12, submitted_date#1996, submitted_year#1997, submitted_month#1998, month_start#1999, category_list#2000, is_ai_category#2005, mentions_ai_terms#2007, mentions_genai_llm#2006, (is_ai_category#2005 OR mentions_ai_terms#2007) AS ai_related#2008, text_available#2003, abstract_available#2004]
+Input [13]: [id#0, title#3, update_date#12, submitted_date#1996, submitted_year#1997, submitted_month#1998, month_start#1999, category_list#2000, text_available#2003, abstract_available#2004, is_ai_category#2005, mentions_genai_llm#2006, mentions_ai_terms#2007]
+
+(11) HashAggregate
+Input [1]: [month_start#1999]
+Keys [1]: [month_start#1999]
+Functions [1]: [partial_count(1)]
+Aggregate Attributes [1]: [count#2793L]
+Results [2]: [month_start#1999, count#2794L]
+
+(12) Exchange
+Input [2]: [month_start#1999, count#2794L]
+Arguments: hashpartitioning(month_start#1999, 48), ENSURE_REQUIREMENTS, [plan_id=4553]
+
+(13) HashAggregate
+Input [2]: [month_start#1999, count#2794L]
+Keys [1]: [month_start#1999]
+Functions [1]: [count(1)]
+Aggregate Attributes [1]: [count(1)#2582L]
+Results [2]: [month_start#1999, count(1)#2582L AS count#2567L]
+
+(14) AdaptiveSparkPlan
+Output [2]: [month_start#1999, count#2567L]
+Arguments: isFinalPlan=false
+
+

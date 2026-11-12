@@ -1,0 +1,56 @@
+== Physical Plan ==
+AdaptiveSparkPlan (9)
++- Project (8)
+   +- BroadcastHashJoin LeftOuter BuildRight (7)
+      :- Project (3)
+      :  +- Generate (2)
+      :     +- Scan parquet  (1)
+      +- BroadcastExchange (6)
+         +- Filter (5)
+            +- Scan csv  (4)
+
+
+(1) Scan parquet 
+Output [7]: [id#665, submitted_month#669, month_start#670, category_list#671, mentions_genai_llm#674, ai_related#675, submitted_year#678]
+Batched: true
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/outputs/papers_clean]
+ReadSchema: struct<id:string,submitted_month:int,month_start:date,category_list:array<string>,mentions_genai_llm:boolean,ai_related:boolean>
+
+(2) Generate
+Input [7]: [id#665, submitted_month#669, month_start#670, category_list#671, mentions_genai_llm#674, ai_related#675, submitted_year#678]
+Arguments: explode(category_list#671), [id#665, submitted_month#669, month_start#670, mentions_genai_llm#674, ai_related#675, submitted_year#678], true, [category_id#799]
+
+(3) Project
+Output [7]: [id#665, submitted_year#678, submitted_month#669, month_start#670, ai_related#675, mentions_genai_llm#674, category_id#799]
+Input [7]: [id#665, submitted_month#669, month_start#670, mentions_genai_llm#674, ai_related#675, submitted_year#678, category_id#799]
+
+(4) Scan csv 
+Output [3]: [category_id#767, subject_group#769, canonical_category_id#772]
+Batched: false
+Location: InMemoryFileIndex [file:/C:/Users/yuhai/Desktop/201E~1/arxiv-ai-pyspark/metadata/arxiv_categories.csv]
+PushedFilters: [IsNotNull(category_id)]
+ReadSchema: struct<category_id:string,subject_group:string,canonical_category_id:string>
+
+(5) Filter
+Input [3]: [category_id#767, subject_group#769, canonical_category_id#772]
+Condition : isnotnull(category_id#767)
+
+(6) BroadcastExchange
+Input [3]: [category_id#767, subject_group#769, canonical_category_id#772]
+Arguments: HashedRelationBroadcastMode(List(input[0, string, false]),false), [plan_id=1157]
+
+(7) BroadcastHashJoin
+Left keys [1]: [category_id#799]
+Right keys [1]: [category_id#767]
+Join type: LeftOuter
+Join condition: None
+
+(8) Project
+Output [9]: [category_id#799, id#665, submitted_year#678, submitted_month#669, month_start#670, ai_related#675, mentions_genai_llm#674, coalesce(canonical_category_id#772, category_id#799) AS canonical_category_id#801, coalesce(subject_group#769, Unknown) AS subject_group#800]
+Input [10]: [id#665, submitted_year#678, submitted_month#669, month_start#670, ai_related#675, mentions_genai_llm#674, category_id#799, category_id#767, subject_group#769, canonical_category_id#772]
+
+(9) AdaptiveSparkPlan
+Output [9]: [category_id#799, id#665, submitted_year#678, submitted_month#669, month_start#670, ai_related#675, mentions_genai_llm#674, canonical_category_id#801, subject_group#800]
+Arguments: isFinalPlan=false
+
+

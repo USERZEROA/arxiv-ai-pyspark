@@ -1,0 +1,66 @@
+20:48:15 | Spark 4.3.0 | Java 21.0.12.1 | Python 3.12.14 | Windows-11-10.0.26300-SP0
+20:48:15 | Application local-1794448093838 | UI http://AI:4040 | run mode: full (all 11 shards)
+20:48:15 | [start] A1 Load raw Parquet + row count
+20:48:18 | [done ] A1 Load raw Parquet + row count  (3.1 s)
+20:48:19 | Input: 11 Parquet files, 2,700,966,734 bytes (2.701 GB), 3,224,635 rows, 25 input partitions
+20:48:19 |   check PASS: all 11 shards read 11 files
+20:48:19 |   check PASS: input size > 1 GB 2,700,966,734 bytes
+20:48:19 |   check PASS: Spark row count == source-declared rows 3,224,635 vs 3,224,635
+20:48:19 | [start] A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)
+20:48:29 | [done ] A2 Data quality checks (QA aggregation, monthly coverage, duplicate ids)  (10.5 s)
+20:48:29 | QA: {"rows": 3224635, "missing_or_empty_id": 0, "distinct_ids": 3224542, "missing_v1_entry": 0, "multiple_v1_entries": 0, "first_versions_entry_not_v1": 0, "v1_parse_failures": 0, "min_v1_ts": "1986-04-25 15:39:49 UTC", "max_v1_ts": "2026-10-22 17:59:58 UTC", "min_update_date": "2007-05-23", "max_update_date": "2026-10-23", "update_date_before_v1_date": 0, "missing_title": 0, "missing_abstract": 0, "missing_categories": 0, "rows_in_window": 1554267, "distinct_ids_in_window": 1554267, "in_window_but_update_before_start": 0, "duplicate_rows_total": 93, "duplicate_rows_in_window": 0, "input_files": 11, "input_bytes": 2700966734}
+20:48:29 |   check PASS: no v1 parse failures 0
+20:48:29 |   check PASS: update_date pre-filter is lossless (no in-window paper with update_date < start) 0
+20:48:29 |   check PASS: snapshot covers the whole study window (max v1 date >= window end) max v1 = 2026-10-22 17:59:58 UTC
+20:48:29 | Duplicate id rows: 93 overall, 0 inside the study window -> dedupe step not needed
+20:48:29 | [start] B1 Clean papers (filters + withColumn + AI flags) and write Parquet by year
+20:48:44 | [done ] B1 Clean papers (filters + withColumn + AI flags) and write Parquet by year  (14.6 s)
+20:48:44 | [start] B2 Read back cleaned papers and register view
+20:48:45 | [done ] B2 Read back cleaned papers and register view  (1.2 s)
+20:48:45 | Cleaned papers: {'rows': 1554267, 'ids': 1554267, 'min_date': datetime.date(2020, 1, 1), 'max_date': datetime.date(2026, 9, 30), 'ai': 614357, 'genai': 118324, 'no_text': 0, 'no_categories': 0}
+20:48:45 |   check PASS: cleaned rows == distinct in-window ids from QA 1,554,267 vs 1,554,267
+20:48:45 |   check PASS: ids unique in cleaned table 
+20:48:45 |   check PASS: dates inside [start, end) 2020-01-01 .. 2026-09-30
+20:48:45 | papers_clean layout: {'submitted_year=2020': 1, 'submitted_year=2021': 1, 'submitted_year=2022': 1, 'submitted_year=2023': 1, 'submitted_year=2024': 1, 'submitted_year=2025': 1, 'submitted_year=2026': 1}
+20:48:45 | [start] B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)
+20:48:48 | [done ] B3 Explode categories + broadcast LEFT join with taxonomy + dedupe (id, subject_group)  (3.2 s)
+20:48:48 |   check PASS: taxonomy key category_id is unique 155 rows / 155 ids
+20:48:48 |   check PASS: LEFT join did not multiply rows 2,872,031 exploded -> 2,872,031 joined
+20:48:48 | Unknown category rows: 0 (0 distinct codes)
+20:48:48 | [start] B4 DataFrame groupBy: annual summary + multi-group share
+20:48:52 | [done ] B4 DataFrame groupBy: annual summary + multi-group share  (3.9 s)
+20:48:52 |   check PASS: paper_subjects unique on (id, subject_group) 
+20:48:52 |   check PASS: every cleaned paper has >= 1 subject row 1,554,267 vs 1,554,267
+20:48:52 | [start] C1 SQL 1: monthly AI research trends
+20:48:53 | [done ] C1 SQL 1: monthly AI research trends  (0.6 s)
+20:48:53 | [start] C2 SQL 2: 2025 vs 2026 cross-disciplinary comparison
+20:48:53 | [done ] C2 SQL 2: 2025 vs 2026 cross-disciplinary comparison  (0.5 s)
+20:48:53 | [start] D1 Read back SQL outputs and verify
+20:48:54 | [done ] D1 Read back SQL outputs and verify  (0.9 s)
+20:48:54 |   check PASS: SQL1: months contiguous and complete for the window 81 months
+20:48:54 |   check PASS: SQL1: sum(total_papers) == cleaned papers 
+20:48:54 |   check PASS: SQL1: sum(ai_papers) == cleaned AI papers 
+20:48:54 |   check PASS: SQL1: genai <= ai <= total each month 
+20:48:54 |   check PASS: SQL1: shares within [0, 1] 
+20:48:54 |   check PASS: DataFrame groupBy totals == SQL1 totals per year 
+20:48:54 |   check PASS: SQL2: 2025 group totals == unique (id, group) rows Jan-Sep 2025 
+20:48:54 |   check PASS: SQL2: 2026 group totals == unique (id, group) rows Jan-Sep 2026 
+20:48:54 |   check PASS: SQL2: group totals >= paper totals (multi-group papers counted per group) 
+20:48:54 |   check PASS: SQL2: ai <= total per group 
+20:48:54 |   check PASS: SQL2: shares within [0, 1] 
+20:48:54 |   check PASS: SQL2: pct change NULL when base is 0 (no infinity) 
+20:48:54 |   check PASS: annual/multi-group outputs read back 
+20:48:54 | [start] P1 Partition pruning check on year-partitioned output
+20:48:56 | [done ] P1 Partition pruning check on year-partitioned output  (1.6 s)
+20:48:56 | [start] P2 Actions vs transformations demo
+20:48:56 | [done ] P2 Actions vs transformations demo  (0.5 s)
+20:48:56 |   check PASS: lazy demo: no job while defining transformations 
+20:48:56 |   check PASS: lazy demo: action triggered >= 1 job 
+20:48:56 | [start] P3 Cache experiment (optional bonus)
+20:49:49 | [done ] P3 Cache experiment (optional bonus)  (52.9 s)
+20:49:49 |   check PASS: cache experiment: cached and uncached results identical 
+20:49:49 | [start] P4 Spot-check sample of AI rule matches
+20:50:05 | [done ] P4 Spot-check sample of AI rule matches  (16.4 s)
+20:50:48 | Pipeline finished in 158.0 s; 29/29 checks passed
+20:50:48 | Event log: spark-events/local-1794448093838
+20:50:49 | SUCCESS: all validation checks passed

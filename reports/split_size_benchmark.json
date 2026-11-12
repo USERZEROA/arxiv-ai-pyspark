@@ -1,0 +1,37 @@
+{
+  "application_id": "local-1794447684804",
+  "query": "clean_papers(raw) -> groupBy(month_start).agg(count, sum(ai_related), sum(mentions_genai_llm))",
+  "local_cores": 24,
+  "results": {
+    "128m": {
+      "input_partitions": 25,
+      "seconds": [
+        11.991,
+        9.038,
+        9.06
+      ],
+      "median_seconds": 9.06,
+      "same_result_as_128m": true
+    },
+    "64m": {
+      "input_partitions": 42,
+      "seconds": [
+        9.966,
+        10.412,
+        10.471
+      ],
+      "median_seconds": 10.412,
+      "same_result_as_128m": true
+    },
+    "32m": {
+      "input_partitions": 83,
+      "seconds": [
+        9.333,
+        9.024,
+        8.97
+      ],
+      "median_seconds": 9.024,
+      "same_result_as_128m": true
+    }
+  }
+}

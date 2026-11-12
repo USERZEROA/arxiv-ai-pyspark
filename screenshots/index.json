@@ -1,0 +1,120 @@
+{
+  "application_id": "local-1794448093838",
+  "screenshots": [
+    {
+      "file": "09_storage_cached_dataframe.png",
+      "url": "/storage/",
+      "caption": "Storage tab while the cleaned-papers DataFrame is cached (cache experiment)."
+    },
+    {
+      "file": "10_storage_rdd_detail.png",
+      "url": "/storage/rdd/?id=399",
+      "caption": "Cached partitions of the cleaned-papers DataFrame (memory size per partition)."
+    },
+    {
+      "file": "01_jobs_all_succeeded.png",
+      "url": "/jobs/",
+      "caption": "Jobs tab of the full run: completed jobs, none failed."
+    },
+    {
+      "file": "02_sql_queries_list.png",
+      "url": "/SQL/",
+      "caption": "SQL / DataFrame tab: every query of the run with its duration."
+    },
+    {
+      "file": "03_B1_clean_write_graph_scan.png",
+      "url": "/SQL/execution/?id=4",
+      "caption": "B1 clean + write query (filters, withColumn, regex flags, write by year). (SQL execution 4). Metrics panel of node 'Scan parquet'."
+    },
+    {
+      "file": "03_B1_clean_write_graph_exchange.png",
+      "url": "/SQL/execution/?id=4",
+      "caption": "B1 clean + write query (filters, withColumn, regex flags, write by year). (SQL execution 4). Metrics panel of node 'Exchange'."
+    },
+    {
+      "file": "03_B1_clean_write_physical_plan.png",
+      "url": "/SQL/execution/?id=4",
+      "caption": "B1 clean + write query (filters, withColumn, regex flags, write by year). (SQL execution 4). Physical plan text (Plan Details)."
+    },
+    {
+      "file": "04_B3_join_graph_broadcasthashjoin.png",
+      "url": "/SQL/execution/?id=11",
+      "caption": "B3 explode + broadcast LEFT join + dedupe on (id, subject_group). (SQL execution 11). Metrics panel of node 'BroadcastHashJoin'."
+    },
+    {
+      "file": "04_B3_join_graph_exchange.png",
+      "url": "/SQL/execution/?id=11",
+      "caption": "B3 explode + broadcast LEFT join + dedupe on (id, subject_group). (SQL execution 11). Metrics panel of node 'Exchange'."
+    },
+    {
+      "file": "04_B3_join_physical_plan.png",
+      "url": "/SQL/execution/?id=11",
+      "caption": "B3 explode + broadcast LEFT join + dedupe on (id, subject_group). (SQL execution 11). Physical plan text (Plan Details)."
+    },
+    {
+      "file": "05_C1_sql1_monthly_graph_scan.png",
+      "url": "/SQL/execution/?id=19",
+      "caption": "SQL 1 (monthly AI trends), executed and written to Parquet. (SQL execution 19). Metrics panel of node 'Scan parquet'."
+    },
+    {
+      "file": "05_C1_sql1_monthly_physical_plan.png",
+      "url": "/SQL/execution/?id=19",
+      "caption": "SQL 1 (monthly AI trends), executed and written to Parquet. (SQL execution 19). Physical plan text (Plan Details)."
+    },
+    {
+      "file": "06_C2_sql2_fields_graph_scan.png",
+      "url": "/SQL/execution/?id=20",
+      "caption": "SQL 2 (2025 vs 2026 field comparison), executed and written to Parquet. (SQL execution 20). Metrics panel of node 'Scan parquet'."
+    },
+    {
+      "file": "06_C2_sql2_fields_physical_plan.png",
+      "url": "/SQL/execution/?id=20",
+      "caption": "SQL 2 (2025 vs 2026 field comparison), executed and written to Parquet. (SQL execution 20). Physical plan text (Plan Details)."
+    },
+    {
+      "file": "07_pruning_year_2025_graph_scan.png",
+      "url": "/SQL/execution/?id=28",
+      "caption": "Dataset root read with submitted_year = 2025 (partition pruning). (SQL execution 28). Metrics panel of node 'Scan parquet'."
+    },
+    {
+      "file": "07_pruning_year_2025_physical_plan.png",
+      "url": "/SQL/execution/?id=28",
+      "caption": "Dataset root read with submitted_year = 2025 (partition pruning). (SQL execution 28). Physical plan text (Plan Details)."
+    },
+    {
+      "file": "07b_pruning_all_years_graph_scan.png",
+      "url": "/SQL/execution/?id=27",
+      "caption": "Same query without the year filter (baseline). (SQL execution 27). Metrics panel of node 'Scan parquet'."
+    },
+    {
+      "file": "07b_pruning_all_years_physical_plan.png",
+      "url": "/SQL/execution/?id=27",
+      "caption": "Same query without the year filter (baseline). (SQL execution 27). Physical plan text (Plan Details)."
+    },
+    {
+      "file": "08_lazy_demo_action_graph_project.png",
+      "url": "/SQL/execution/?id=29",
+      "caption": "Query run by the lazy-evaluation demo's collect() action. (SQL execution 29). Metrics panel of node 'Project'."
+    },
+    {
+      "file": "08_lazy_demo_action_physical_plan.png",
+      "url": "/SQL/execution/?id=29",
+      "caption": "Query run by the lazy-evaluation demo's collect() action. (SQL execution 29). Physical plan text (Plan Details)."
+    },
+    {
+      "file": "11_stage_B1_scan_tasks.png",
+      "url": "/stages/stage/?id=34&attempt=0",
+      "caption": "Scan/regex stage of B1: input size, task summary (min/median/max) and parallelism."
+    },
+    {
+      "file": "12_stages_list.png",
+      "url": "/stages/",
+      "caption": "Stages tab: input, shuffle read/write per stage."
+    },
+    {
+      "file": "13_executors_local_mode.png",
+      "url": "/executors/",
+      "caption": "Executors tab: single local driver/executor (local mode)."
+    }
+  ]
+}
