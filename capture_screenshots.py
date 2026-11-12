@@ -174,16 +174,38 @@ class LiveUICapture:
         self._with_page(run)
 
 
-def render_log(log_file, out_png, title="Console output of the full pipeline run"):
-    """Screenshot of the real run log, rendered as plain monospaced text."""
+def manifest_summary(manifest_file):
+    """A few lines from metadata/data_manifest.json (data version and size)."""
+    m = json.loads(Path(manifest_file).read_text(encoding="utf-8"))
+    local = m["locally_measured"]
+    return "\n".join([
+        f"repo_id:            {m['repo_id']}",
+        f"revision:           {m['revision']}",
+        f"downloaded:         {m['download_date_local']}",
+        f"parquet files:      {local['num_parquet_files']}",
+        f"parquet bytes:      {local['parquet_total_bytes']:,}",
+        f"rows (source card): {m['source_declared']['num_rows']:,}",
+        f"rows (Spark count): {local['spark_row_count']:,}  (application {local.get('spark_application_id')})",
+    ])
+
+
+def render_log(log_file, out_png, manifest_file="metadata/data_manifest.json",
+               title="Console output of the full pipeline run"):
+    """Image of the run log text, with the data version from the manifest on top."""
     text = Path(log_file).read_text(encoding="utf-8")
+    log_html = (html.escape(text).replace("check PASS", '<span class="pass">check PASS</span>')
+                .replace("SUCCESS", '<span class="pass">SUCCESS</span>')
+                .replace("[done ]", '<span class="done">[done ]</span>'))
     page_html = f"""<html><head><meta charset="utf-8"><style>
       body {{ margin:0; background:#1a1a19; color:#f0efec; font:13px/1.45 Consolas, monospace; }}
       .bar {{ background:#2b2b29; color:#c3c2b7; padding:8px 14px; font-family:Segoe UI, sans-serif; }}
       pre {{ margin:0; padding:12px 14px; white-space:pre-wrap; word-break:break-all; }}
       .pass {{ color:#7fd18b; }} .done {{ color:#8ab8f0; }}
-    </style></head><body><div class="bar">{html.escape(title)} &mdash; {html.escape(str(log_file))}</div>
-    <pre>{html.escape(text).replace("check PASS", '<span class="pass">check PASS</span>').replace("SUCCESS", '<span class="pass">SUCCESS</span>').replace("[done ]", '<span class="done">[done ]</span>')}</pre></body></html>"""
+    </style></head><body>
+    <div class="bar">Data version &mdash; {html.escape(str(manifest_file))}</div>
+    <pre>{html.escape(manifest_summary(manifest_file))}</pre>
+    <div class="bar">{html.escape(title)} &mdash; {html.escape(str(log_file))}</div>
+    <pre>{log_html}</pre></body></html>"""
     with sync_playwright() as pw:
         browser = _launch(pw)
         page = browser.new_page(viewport={"width": 1500, "height": 900})
