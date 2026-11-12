@@ -1,0 +1,98 @@
+{
+  "dataset": "arXiv paper metadata (Parquet mirror)",
+  "repo_id": "librarian-bots/arxiv-metadata-snapshot",
+  "repo_type": "dataset",
+  "revision": "c428226b689a0e17db2cd55265133b9eca15d97f",
+  "revision_last_modified": "2026-10-27 11:10:26+00:00",
+  "source_urls": {
+    "upstream_kaggle": "https://www.kaggle.com/datasets/Cornell-University/arxiv",
+    "mirror": "https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot",
+    "pinned_commit": "https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/commit/c428226b689a0e17db2cd55265133b9eca15d97f",
+    "pinned_tree": "https://huggingface.co/datasets/librarian-bots/arxiv-metadata-snapshot/tree/c428226b689a0e17db2cd55265133b9eca15d97f/data"
+  },
+  "license_metadata": "cc0-1.0",
+  "license_note": "CC0-1.0 applies to the metadata records in this mirror (per its dataset card). Each paper's full text has its own license; no full texts are downloaded by this project.",
+  "download_date_local": "2026-11-11",
+  "source_declared": {
+    "num_rows": 3224635,
+    "download_size_bytes": 2700966734,
+    "num_parquet_files": 11,
+    "parquet_bytes_sum_from_hub_api": 2700966734
+  },
+  "locally_measured": {
+    "num_parquet_files": 11,
+    "parquet_total_bytes": 2700966734,
+    "parquet_total_gb_decimal": 2.701,
+    "parquet_total_gib": 2.515,
+    "spark_row_count": null
+  },
+  "files": [
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00000-of-00011.parquet",
+      "local_bytes": 284033689,
+      "source_declared_bytes": 284033689,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00001-of-00011.parquet",
+      "local_bytes": 280398761,
+      "source_declared_bytes": 280398761,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00002-of-00011.parquet",
+      "local_bytes": 275725802,
+      "source_declared_bytes": 275725802,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00003-of-00011.parquet",
+      "local_bytes": 269293149,
+      "source_declared_bytes": 269293149,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00004-of-00011.parquet",
+      "local_bytes": 262530975,
+      "source_declared_bytes": 262530975,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00005-of-00011.parquet",
+      "local_bytes": 254418986,
+      "source_declared_bytes": 254418986,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00006-of-00011.parquet",
+      "local_bytes": 243101946,
+      "source_declared_bytes": 243101946,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00007-of-00011.parquet",
+      "local_bytes": 233806666,
+      "source_declared_bytes": 233806666,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00008-of-00011.parquet",
+      "local_bytes": 222733408,
+      "source_declared_bytes": 222733408,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00009-of-00011.parquet",
+      "local_bytes": 200637171,
+      "source_declared_bytes": 200637171,
+      "size_matches_source": true
+    },
+    {
+      "path": "data/raw/arxiv-metadata-snapshot/data/train-00010-of-00011.parquet",
+      "local_bytes": 174286181,
+      "source_declared_bytes": 174286181,
+      "size_matches_source": true
+    }
+  ],
+  "note": "Only real .parquet data files are counted (no cache, outputs, event logs or the data card)."
+}

@@ -1,0 +1,21 @@
+# Python / environments
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Large data and Spark artefacts (kept locally, never committed)
+data/
+outputs/
+spark-events/
+spark-warehouse/
+metastore_db/
+derby.log
+reports/dev/
+
+# Windows helper build output (rebuilt automatically from the .java source)
+tools/windows/build/
+
+# Credentials
+.env
+*.token

@@ -1,0 +1,26 @@
+{
+  "source_url": "https://arxiv.org/category_taxonomy",
+  "retrieved_date": "2026-11-11",
+  "page_sha256": "cbbfc0ccb84801d5e3e805e4e6f40649af6fdaa140a28ce6dff2962b56894ff2",
+  "num_categories": 155,
+  "num_aliases": 6,
+  "aliases": {
+    "cs.NA": "math.NA",
+    "cs.SY": "eess.SY",
+    "math.IT": "cs.IT",
+    "math.MP": "math-ph",
+    "q-fin.EC": "econ.GN",
+    "stat.TH": "math.ST"
+  },
+  "subject_groups": [
+    "Computer Science",
+    "Economics",
+    "Electrical Engineering and Systems Science",
+    "Mathematics",
+    "Physics",
+    "Quantitative Biology",
+    "Quantitative Finance",
+    "Statistics"
+  ],
+  "note": "subject_group is the top-level arXiv group heading on the taxonomy page. Legacy codes that are no longer listed (e.g. pre-2009 archives) are not in the CSV and show up as 'Unknown' in the pipeline."
+}

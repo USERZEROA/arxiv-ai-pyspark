@@ -1,0 +1,7 @@
+# Versions verified for this project (Windows 11, Python 3.12, Java 21 / CI: Ubuntu, Java 17).
+pyspark==4.3.0
+pyarrow==26.0.1
+pandas==2.3.3          # PySpark 4.3 warns that pandas>=3 is not fully supported
+matplotlib==3.11.2
+huggingface_hub==2.4.0 # download_data.py only
+playwright==1.65.1     # capture_screenshots.py only (uses the local Chrome install)
