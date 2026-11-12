@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "created": "2026-11-11",
+  "description": "Operational, rule-based definition of 'AI-related' arXiv papers used by pipeline.py. It is a project definition, not an official arXiv classification, and its accuracy has not been measured.",
+  "ai_categories": ["cs.AI", "cs.LG", "cs.CL", "cs.CV", "cs.RO", "cs.MA", "cs.NE", "stat.ML"],
+  "ai_categories_note": "cs.AI alone does not cover all AI work: arXiv lists machine learning, vision, robotics, multiagent systems and NLP as separate categories, so they are included. cs.NE (neural and evolutionary computing) and stat.ML are included as core ML venues. This set is a choice of this project.",
+  "text_normalization": "title and abstract are joined with a space; runs of whitespace, hyphens/dashes and underscores are replaced by one space (so 'large-language-model' == 'large language model'). Matching uses word boundaries (\\b).",
+  "ai_term_regex": "(?i)\\b(?:artificial intelligence|machine learning|deep learning|neural networks?|reinforcement learning|(?:self |semi |un)?supervised learning|natural language processing|computer vision|generative adversarial networks?|language models?|transfer learning|federated learning|representation learning)\\b",
+  "genai_llm_phrase_regex": "(?i)\\b(?:generative (?:ai|artificial intelligence)|large language models?|vision language models?|chatgpt|gpt ?[2-5](?:\\.5)?o?|generative pre ?trained transformers?)\\b",
+  "llm_acronym_regex": "\\bLLMs?\\b",
+  "genai_llm_note": "genai_llm_regex = genai_llm_phrase_regex OR llm_acronym_regex. The acronym LLM/LLMs is matched case-sensitively (upper case only) and as a whole word, to avoid matching unrelated lower-case tokens. GenAI/LLM matches are also counted as AI terms (mentions_ai_terms = ai_term_regex OR genai_llm_regex).",
+  "fields": {
+    "is_ai_category": "categories contain at least one code from ai_categories",
+    "mentions_ai_terms": "normalised title+abstract matches ai_term_regex or genai_llm_regex",
+    "mentions_genai_llm": "normalised title+abstract matches genai_llm_regex",
+    "ai_related": "is_ai_category OR mentions_ai_terms",
+    "text_available": "title or abstract is non-empty after trimming"
+  },
+  "deliberately_not_used": [
+    "bare 'AI' token or the substring 'ai' (matches words like 'domain', 'train')",
+    "'transformer' (power engineering, physics)",
+    "'diffusion' / 'diffusion model' (physics, chemistry, finance)",
+    "'agent' / 'multi-agent' (economics, game theory, epidemiology)",
+    "'attention' (psychology, neuroscience)",
+    "'foundation model' (kept out to keep the GenAI/LLM group narrow)"
+  ],
+  "known_limitations": [
+    "'neural network(s)' can refer to biological networks in neuroscience papers.",
+    "'language model(s)' also matches non-neural NLP work (e.g. n-gram models).",
+    "Keyword groups overlap; counts per term group must not be summed."
+  ]
+}

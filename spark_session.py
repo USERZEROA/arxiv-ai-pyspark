@@ -28,29 +28,31 @@ SHIM_CLASS = "local.shim.NoChmodLocalFileSystem"
 
 
 def safe_path(path) -> str:
-    """Return an ASCII-safe absolute path string (8.3 short path on Windows).
+    """Return an ASCII-safe absolute path string.
 
-    The path (or its nearest existing parent) must exist for Windows to return
-    a short name, so we create missing directories up front.
+    On Windows, only the path components that contain non-ASCII characters are
+    replaced by their 8.3 short names (e.g. a Chinese folder name -> '201E~1');
+    ASCII components such as 'paper_subjects' are kept, so a path means the
+    same folder whether or not it exists yet.
     """
     p = Path(path).resolve()
-    if not IS_WINDOWS:
+    if not IS_WINDOWS or str(p).isascii():
         return str(p)
-    if p.is_file():
-        # shorten only the directory part; keep the (ASCII) file name and extension
-        return str(Path(safe_path(p.parent)) / p.name)
     import ctypes
 
-    existing, tail = p, []
-    while not existing.exists():
-        tail.append(existing.name)
-        existing = existing.parent
-    buf = ctypes.create_unicode_buffer(32768)
-    ctypes.windll.kernel32.GetShortPathNameW(str(existing), buf, len(buf))
-    short = Path(buf.value or str(existing))
-    for part in reversed(tail):
-        short = short / part
-    return str(short)
+    real = Path(p.anchor)
+    out = Path(p.anchor)
+    for part in p.parts[1:]:
+        real = real / part
+        if part.isascii():
+            out = out / part
+            continue
+        buf = ctypes.create_unicode_buffer(32768)
+        ctypes.windll.kernel32.GetShortPathNameW(str(real), buf, len(buf))
+        if not buf.value:
+            raise RuntimeError(f"No 8.3 short name for non-ASCII path component: {real}")
+        out = out / Path(buf.value).name
+    return str(out)
 
 
 def file_uri(path) -> str:

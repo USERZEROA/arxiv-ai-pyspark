@@ -12,6 +12,7 @@ spark-warehouse/
 metastore_db/
 derby.log
 reports/dev/
+screenshots/dev/
 
 # Windows helper build output (rebuilt automatically from the .java source)
 tools/windows/build/
